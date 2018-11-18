@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		635C75C721A1FE77009667DD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635C75C621A1FE77009667DD /* CloudKit.framework */; };
+		635C760021A1FEB2009667DD /* OtherObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75ED21A1FEB2009667DD /* OtherObject.swift */; };
+		635C760121A1FEB2009667DD /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75EE21A1FEB2009667DD /* Object.swift */; };
+		635C760221A1FEB2009667DD /* BoxedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F021A1FEB2009667DD /* BoxedArray.swift */; };
+		635C760321A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */; };
+		635C760421A1FEB2009667DD /* CKEncoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */; };
+		635C760521A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */; };
+		635C760621A1FEB2009667DD /* CKEncoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */; };
+		635C760721A1FEB2009667DD /* CloudKitRecordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */; };
+		635C760821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */; };
+		635C760921A1FEB2009667DD /* CKDecoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */; };
+		635C760A21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */; };
+		635C760B21A1FEB2009667DD /* CloudKitRecordDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */; };
+		635C760C21A1FEB2009667DD /* Array+CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */; };
+		635C760D21A1FEB2009667DD /* CustomCloudKitEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */; };
+		635C760E21A1FEB2009667DD /* CloudkitCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */; };
+		635C760F21A1FEB2009667DD /* CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FF21A1FEB2009667DD /* CKRecord.swift */; };
+		63E009E421A1FE2F0044B9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */; };
+		63E009E621A1FE2F0044B9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E009E521A1FE2F0044B9A8 /* ViewController.swift */; };
+		63E009E921A1FE2F0044B9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E009E721A1FE2F0044B9A8 /* Main.storyboard */; };
+		63E009EB21A1FE310044B9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E009EA21A1FE310044B9A8 /* Assets.xcassets */; };
+		63E009EE21A1FE310044B9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E009EC21A1FE310044B9A8 /* LaunchScreen.storyboard */; };
+		63E009F921A1FE310044B9A8 /* NestedCloudKitCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E009F821A1FE310044B9A8 /* NestedCloudKitCodableTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E009F521A1FE310044B9A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E009D821A1FE2F0044B9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E009DF21A1FE2F0044B9A8;
+			remoteInfo = NestedCloudKitCodable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		635C75C421A1FE75009667DD /* NestedCloudKitCodable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestedCloudKitCodable.entitlements; sourceTree = "<group>"; };
+		635C75C621A1FE77009667DD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		635C75ED21A1FEB2009667DD /* OtherObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherObject.swift; sourceTree = "<group>"; };
+		635C75EE21A1FEB2009667DD /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		635C75F021A1FEB2009667DD /* BoxedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedArray.swift; sourceTree = "<group>"; };
+		635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderUnkeyedContainer.swift; sourceTree = "<group>"; };
+		635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderKeyedContainer.swift; sourceTree = "<group>"; };
+		635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCloudkitKeyedEncoder.swift; sourceTree = "<group>"; };
+		635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderSingleValueContainer.swift; sourceTree = "<group>"; };
+		635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitRecordEncoder.swift; sourceTree = "<group>"; };
+		635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderUnkeyedContainer.swift; sourceTree = "<group>"; };
+		635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderKeyedContainer.swift; sourceTree = "<group>"; };
+		635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderSingleValueContainer.swift; sourceTree = "<group>"; };
+		635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitRecordDecoder.swift; sourceTree = "<group>"; };
+		635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CKRecord.swift"; sourceTree = "<group>"; };
+		635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCloudKitEncodable.swift; sourceTree = "<group>"; };
+		635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudkitCodableError.swift; sourceTree = "<group>"; };
+		635C75FF21A1FEB2009667DD /* CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecord.swift; sourceTree = "<group>"; };
+		63E009E021A1FE2F0044B9A8 /* NestedCloudKitCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCloudKitCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63E009E521A1FE2F0044B9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63E009E821A1FE2F0044B9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63E009EA21A1FE310044B9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63E009ED21A1FE310044B9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63E009EF21A1FE310044B9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E009F421A1FE310044B9A8 /* NestedCloudKitCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedCloudKitCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E009F821A1FE310044B9A8 /* NestedCloudKitCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCloudKitCodableTests.swift; sourceTree = "<group>"; };
+		63E009FA21A1FE310044B9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E009DD21A1FE2F0044B9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635C75C721A1FE77009667DD /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E009F121A1FE310044B9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		635C75C521A1FE77009667DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				635C75C621A1FE77009667DD /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		635C75EC21A1FEB2009667DD /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				635C75ED21A1FEB2009667DD /* OtherObject.swift */,
+				635C75EE21A1FEB2009667DD /* Object.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		635C75EF21A1FEB2009667DD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				635C761121A1FEC9009667DD /* Error */,
+				635C761021A1FEBE009667DD /* Extensions */,
+				635C75F121A1FEB2009667DD /* Encoder */,
+				635C75F721A1FEB2009667DD /* Decoder */,
+				635C75F021A1FEB2009667DD /* BoxedArray.swift */,
+				635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		635C75F121A1FEB2009667DD /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */,
+				635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */,
+				635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */,
+				635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */,
+				635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		635C75F721A1FEB2009667DD /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */,
+				635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */,
+				635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */,
+				635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		635C761021A1FEBE009667DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */,
+				635C75FF21A1FEB2009667DD /* CKRecord.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		635C761121A1FEC9009667DD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		63E009D721A1FE2F0044B9A8 = {
+			isa = PBXGroup;
+			children = (
+				63E009E221A1FE2F0044B9A8 /* NestedCloudKitCodable */,
+				63E009F721A1FE310044B9A8 /* NestedCloudKitCodableTests */,
+				63E009E121A1FE2F0044B9A8 /* Products */,
+				635C75C521A1FE77009667DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63E009E121A1FE2F0044B9A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E009E021A1FE2F0044B9A8 /* NestedCloudKitCodable.app */,
+				63E009F421A1FE310044B9A8 /* NestedCloudKitCodableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E009E221A1FE2F0044B9A8 /* NestedCloudKitCodable */ = {
+			isa = PBXGroup;
+			children = (
+				635C75EF21A1FEB2009667DD /* Sources */,
+				635C75EC21A1FEB2009667DD /* Objects */,
+				635C75C421A1FE75009667DD /* NestedCloudKitCodable.entitlements */,
+				63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */,
+				63E009E521A1FE2F0044B9A8 /* ViewController.swift */,
+				63E009E721A1FE2F0044B9A8 /* Main.storyboard */,
+				63E009EA21A1FE310044B9A8 /* Assets.xcassets */,
+				63E009EC21A1FE310044B9A8 /* LaunchScreen.storyboard */,
+				63E009EF21A1FE310044B9A8 /* Info.plist */,
+			);
+			path = NestedCloudKitCodable;
+			sourceTree = "<group>";
+		};
+		63E009F721A1FE310044B9A8 /* NestedCloudKitCodableTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E009F821A1FE310044B9A8 /* NestedCloudKitCodableTests.swift */,
+				63E009FA21A1FE310044B9A8 /* Info.plist */,
+			);
+			path = NestedCloudKitCodableTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E009DF21A1FE2F0044B9A8 /* NestedCloudKitCodable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E009FD21A1FE310044B9A8 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable" */;
+			buildPhases = (
+				63E009DC21A1FE2F0044B9A8 /* Sources */,
+				63E009DD21A1FE2F0044B9A8 /* Frameworks */,
+				63E009DE21A1FE2F0044B9A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestedCloudKitCodable;
+			productName = NestedCloudKitCodable;
+			productReference = 63E009E021A1FE2F0044B9A8 /* NestedCloudKitCodable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63E009F321A1FE310044B9A8 /* NestedCloudKitCodableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E00A0021A1FE310044B9A8 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableTests" */;
+			buildPhases = (
+				63E009F021A1FE310044B9A8 /* Sources */,
+				63E009F121A1FE310044B9A8 /* Frameworks */,
+				63E009F221A1FE310044B9A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E009F621A1FE310044B9A8 /* PBXTargetDependency */,
+			);
+			name = NestedCloudKitCodableTests;
+			productName = NestedCloudKitCodableTests;
+			productReference = 63E009F421A1FE310044B9A8 /* NestedCloudKitCodableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E009D821A1FE2F0044B9A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Guilherme Girotto";
+				TargetAttributes = {
+					63E009DF21A1FE2F0044B9A8 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					63E009F321A1FE310044B9A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63E009DF21A1FE2F0044B9A8;
+					};
+				};
+			};
+			buildConfigurationList = 63E009DB21A1FE2F0044B9A8 /* Build configuration list for PBXProject "NestedCloudKitCodable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E009D721A1FE2F0044B9A8;
+			productRefGroup = 63E009E121A1FE2F0044B9A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E009DF21A1FE2F0044B9A8 /* NestedCloudKitCodable */,
+				63E009F321A1FE310044B9A8 /* NestedCloudKitCodableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E009DE21A1FE2F0044B9A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E009EE21A1FE310044B9A8 /* LaunchScreen.storyboard in Resources */,
+				63E009EB21A1FE310044B9A8 /* Assets.xcassets in Resources */,
+				63E009E921A1FE2F0044B9A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E009F221A1FE310044B9A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E009DC21A1FE2F0044B9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635C760221A1FEB2009667DD /* BoxedArray.swift in Sources */,
+				635C760A21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift in Sources */,
+				63E009E621A1FE2F0044B9A8 /* ViewController.swift in Sources */,
+				635C760421A1FEB2009667DD /* CKEncoderKeyedContainer.swift in Sources */,
+				635C760621A1FEB2009667DD /* CKEncoderSingleValueContainer.swift in Sources */,
+				635C760E21A1FEB2009667DD /* CloudkitCodableError.swift in Sources */,
+				635C760321A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift in Sources */,
+				635C760921A1FEB2009667DD /* CKDecoderKeyedContainer.swift in Sources */,
+				63E009E421A1FE2F0044B9A8 /* AppDelegate.swift in Sources */,
+				635C760B21A1FEB2009667DD /* CloudKitRecordDecoder.swift in Sources */,
+				635C760721A1FEB2009667DD /* CloudKitRecordEncoder.swift in Sources */,
+				635C760121A1FEB2009667DD /* Object.swift in Sources */,
+				635C760821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift in Sources */,
+				635C760521A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift in Sources */,
+				635C760F21A1FEB2009667DD /* CKRecord.swift in Sources */,
+				635C760C21A1FEB2009667DD /* Array+CKRecord.swift in Sources */,
+				635C760021A1FEB2009667DD /* OtherObject.swift in Sources */,
+				635C760D21A1FEB2009667DD /* CustomCloudKitEncodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E009F021A1FE310044B9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E009F921A1FE310044B9A8 /* NestedCloudKitCodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E009F621A1FE310044B9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E009DF21A1FE2F0044B9A8 /* NestedCloudKitCodable */;
+			targetProxy = 63E009F521A1FE310044B9A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63E009E721A1FE2F0044B9A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E009E821A1FE2F0044B9A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63E009EC21A1FE310044B9A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E009ED21A1FE310044B9A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E009FB21A1FE310044B9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63E009FC21A1FE310044B9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63E009FE21A1FE310044B9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCloudKitCodable/NestedCloudKitCodable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCloudKitCodable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63E009FF21A1FE310044B9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCloudKitCodable/NestedCloudKitCodable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCloudKitCodable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63E00A0121A1FE310044B9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCloudKitCodableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedCloudKitCodable.app/NestedCloudKitCodable";
+			};
+			name = Debug;
+		};
+		63E00A0221A1FE310044B9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCloudKitCodableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedCloudKitCodable.app/NestedCloudKitCodable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E009DB21A1FE2F0044B9A8 /* Build configuration list for PBXProject "NestedCloudKitCodable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E009FB21A1FE310044B9A8 /* Debug */,
+				63E009FC21A1FE310044B9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E009FD21A1FE310044B9A8 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E009FE21A1FE310044B9A8 /* Debug */,
+				63E009FF21A1FE310044B9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E00A0021A1FE310044B9A8 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E00A0121A1FE310044B9A8 /* Debug */,
+				63E00A0221A1FE310044B9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E009D821A1FE2F0044B9A8 /* Project object */;
+}
