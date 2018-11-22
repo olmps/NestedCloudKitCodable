@@ -1,24 +1,24 @@
 //
 //  CKEncoderKeyedContainer.swift
-//  Hercules-iOS
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 14/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import CloudKit
 import Foundation
 
-internal class CKEncoderKeyedContainer<Key>: CustomCloudkitKeyedEncoder where Key: CodingKey {
+internal class CKEncoderKeyedContainer<Key>: CKKeyedEncoder where Key: CodingKey {
     
-    private let object: CustomCloudKitEncodable
+    private let object: CKEncodable
     private let zoneID: CKRecordZone.ID?
     var codingPath: [CodingKey]
     private var createdRecords: BoxedArray<CKRecord>
     
     fileprivate var storage: [String: CKRecordValue] = [:]
     
-    init(object: CustomCloudKitEncodable,
+    init(object: CKEncodable,
          zoneID: CKRecordZone.ID?,
          codingPath: [CodingKey],
          createdRecords: BoxedArray<CKRecord>) {
@@ -57,25 +57,20 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
         guard !object.ignoredProperties().contains(key.stringValue) else {
             return
         }
-        /**
-            Encode a single value
-         */
-        if let singleValue = value as? CustomCloudKitEncodable {
+        
+        // Encode a single value
+        if let singleValue = value as? CKEncodable {
             try encodeSingleValue(singleValue, forKey: key)
             return
         }
         
-        /**
-            Encode a an array of values
-         */
-        if let values = value as? [CustomCloudKitEncodable] {
+        // Encode a an array of values
+        if let values = value as? [CKEncodable] {
             try encodeValuesSequence(originValue: value, castedValues: values, forKey: key)
             return
         }
         
-        /**
-            Encode an unique primitve type
-         */
+        // Encode an unique primitve type
         if let ckValue = value as? CKRecordValue {
             try encodeCKRecordValue(ckValue, forKey: key)
             return
@@ -84,7 +79,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
     
     // MARK: Auxiliar Encode functions
     
-    private func encodeSingleValue(_ value: CustomCloudKitEncodable, forKey key: Key) throws {
+    private func encodeSingleValue(_ value: CKEncodable, forKey key: Key) throws {
         storage[key.stringValue] = try produceReference(for: value)
         let encoder = _CloudKitRecordEncoder(object: value,
                                              zoneID: zoneID,
@@ -95,7 +90,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
         }
     }
     
-    private func encodeValuesSequence<T>(originValue value: T, castedValues: [CustomCloudKitEncodable], forKey key: Key) throws where T: Encodable {
+    private func encodeValuesSequence<T>(originValue value: T, castedValues: [CKEncodable], forKey key: Key) throws where T: Encodable {
         var references = [CKRecord.Reference]()
         try castedValues.forEach {
             let reference = try produceReference(for: $0)
@@ -195,7 +190,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
         storage[key.stringValue] = value
     }
     
-    private func produceReference(for value: CustomCloudKitEncodable) throws -> CKRecord.Reference {
+    private func produceReference(for value: CKEncodable) throws -> CKRecord.Reference {
         let recordID = CKRecord.ID(recordName: value.cloudKitIdentifier)
         return CKRecord.Reference(recordID: recordID, action: .deleteSelf)
     }

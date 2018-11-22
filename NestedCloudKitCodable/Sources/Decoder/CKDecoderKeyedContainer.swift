@@ -1,9 +1,9 @@
 //
 //  CKDecoderKeyedContainer.swift
-//  Hercules-iOS
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 13/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import CloudKit
@@ -49,39 +49,29 @@ extension CKDecoderKeyedContainer {
     }
     
     func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T: Decodable {
-        print(type)
-        print(key)
         try checkCanDecodeValue(forKey: key)
         
-        /**
-            Decode an unique CKRecord.Reference
-         */
+        // Decode an unique CKRecord.Reference
         if let reference = record[key.stringValue] as? CKRecord.Reference {
             return try decodeSingleReference(reference, type: type)
         }
         
-        /**
-            Decode an array of CKRecord.Reference
-         */
+        // Decode an array of CKRecord.Reference
         if let references = record[key.stringValue] as? [CKRecord.Reference] {
             return try decodeReferenceSequence(references, type: type)
         }
         
-        /**
-            Decode an array of primite elements, such as String for example.
-         */
+        // Decode an array of primite elements, such as String for example.
         if let primitiveValues = record[key.stringValue] as? [T] {
             return try decodePrimitiveElementSequence(primitiveValues, type: type)
         }
         
-        /**
-            Decode an unique primite value
-         */
+        // Decode an unique primitive value
         if let value = record[key.stringValue] {
             return try decodeCKRecordValue(value, forKey: key)
         }
         
-        throw CloudkitCodableError(.typeMismatch, context: ["Error:": "Couldn't convert value \(String(describing: type)) to CKRecodValue"])
+        throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert value \(String(describing: type)) to CKRecodValue"])
     }
     
     // MARK: Decode Helper Functions
@@ -123,10 +113,10 @@ extension CKDecoderKeyedContainer {
         guard let associatedRecord = records.first(where: { record -> Bool in
             record.recordID == reference.recordID
         }) else {
-            throw CloudkitCodableError(.recordNotFound)
+            throw CKCodableError(.recordNotFound)
         }
         
-        let decoder = _CloudKitRecordDecoder(records: records, recordBeingAnalyzed: associatedRecord)
+        let decoder = _CKRecordDecoder(records: records, recordBeingAnalyzed: associatedRecord)
         return try T(from: decoder)
     }
     
@@ -138,18 +128,18 @@ extension CKDecoderKeyedContainer {
                 record.recordID == reference.recordID
             })
             guard let unwrappedRecord = associatedRecord else {
-                throw CloudkitCodableError(.recordNotFound)
+                throw CKCodableError(.recordNotFound)
             }
             referencesRecords.append(unwrappedRecord)
         }
-        let decoder = _CloudKitRecordDecoder(records: records, recordBeingAnalyzed: record)
+        let decoder = _CKRecordDecoder(records: records, recordBeingAnalyzed: record)
         decoder.state = .records
         decoder.unkeyedRecords = referencesRecords
         return try T(from: decoder)
     }
     
     private func decodePrimitiveElementSequence<T>(_ elements: [T], type: T.Type) throws -> T where T: Decodable {
-        let decoder = _CloudKitRecordDecoder(records: records, recordBeingAnalyzed: record)
+        let decoder = _CKRecordDecoder(records: records, recordBeingAnalyzed: record)
         decoder.state = .elements
         decoder.unkeyedElements = elements
         return try T(from: decoder)
@@ -177,11 +167,11 @@ extension CKDecoderKeyedContainer {
     }
     
     func superDecoder() throws -> Decoder {
-        return _CloudKitRecordDecoder(records: records)
+        return _CKRecordDecoder(records: records)
     }
     
     func superDecoder(forKey key: Key) throws -> Decoder {
-        let decoder = _CloudKitRecordDecoder(records: records)
+        let decoder = _CKRecordDecoder(records: records)
         decoder.codingPath = [key]
         
         return decoder

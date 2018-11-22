@@ -1,9 +1,9 @@
 //
 //  BoxedArray.swift
-//  Hercules-iOS
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 14/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import Foundation

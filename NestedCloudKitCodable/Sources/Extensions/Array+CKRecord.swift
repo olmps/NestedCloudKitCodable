@@ -1,9 +1,9 @@
 //
 //  Array+CKRecord.swift
-//  Hercules-iOS
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 12/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import CloudKit
@@ -16,9 +16,7 @@ extension Array where Element: CKRecord {
     func filteredByUniqueIds() -> [Element] {
         var uniqueElements = [Element]()
         for element in self {
-            let hasElement = uniqueElements.contains(where: { uniqueElement -> Bool in
-                element.recordID.recordName == uniqueElement.recordID.recordName
-            })
+            let hasElement = uniqueElements.contains { element.recordID.recordName == $0.recordID.recordName }
             if !hasElement {
                 uniqueElements.append(element)
             }

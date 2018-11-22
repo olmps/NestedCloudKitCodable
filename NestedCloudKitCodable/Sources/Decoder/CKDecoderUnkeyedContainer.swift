@@ -1,9 +1,9 @@
 //
-//  UnkeyedContainer.swift
-//  Hercules-iOS
+//  CKDecoderUnkeyedContainer.swift
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 13/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import CloudKit
@@ -57,7 +57,7 @@ internal class CKDecoderUnkeyedContainer: UnkeyedDecodingContainer {
     }
     
     func superDecoder() throws -> Decoder {
-        return _CloudKitRecordDecoder(records: records)
+        return _CKRecordDecoder(records: records)
     }
 }
 
@@ -100,7 +100,7 @@ extension CKDecoderUnkeyedContainer {
     
     private func decodeElement<T>() throws -> T where T: Decodable {
         guard let element = element as? T else {
-            throw CloudkitCodableError(.typeMismatch)
+            throw CKCodableError(.typeMismatch)
         }
         current += 1
         return element
@@ -109,7 +109,7 @@ extension CKDecoderUnkeyedContainer {
     private func decodeRecord<T>() throws -> T where T: Decodable {
         let element = record
         current += 1
-        let decoder = _CloudKitRecordDecoder(records: records, recordBeingAnalyzed: element)
+        let decoder = _CKRecordDecoder(records: records, recordBeingAnalyzed: element)
         return try T(from: decoder)
     }
 }

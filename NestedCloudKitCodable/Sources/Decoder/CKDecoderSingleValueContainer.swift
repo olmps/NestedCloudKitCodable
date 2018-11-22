@@ -1,6 +1,6 @@
 //
 //  CKDecoderSingleValueContainer.swift
-//  CloudKitCodable
+//  NestedCloudKitCodable
 //
 //  Created by Guilherme Girotto on 18/11/18.
 //  Copyright © 2018 Guilherme Girotto. All rights reserved.
@@ -29,7 +29,7 @@ extension CKDecoderSingleValueContainer {
     }
     
     func decode<T>(_ type: T.Type) throws -> T where T : Decodable {
-        let decoder = _CloudKitRecordDecoder(records: records,
+        let decoder = _CKRecordDecoder(records: records,
                                              recordBeingAnalyzed: recordBeingAnalyzed)
         return try T(from: decoder)
     }

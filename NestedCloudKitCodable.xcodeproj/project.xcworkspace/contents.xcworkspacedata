@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:/Users/guilhermegirotto/Desktop/NestedCloudkitCodable/NestedCloudKitCodable/Sources"
+      name = "Sources">
+      <FileRef
+         location = "group:../Example Objects/Person.swift">
+      </FileRef>
+      <FileRef
+         location = "group:../Example Objects/Person.swift">
+      </FileRef>
+      <FileRef
+         location = "group:BoxedArray.swift">
+      </FileRef>
+      <Group
+         location = "group:Encoder"
+         name = "Encoder">
+         <FileRef
+            location = "group:CKEncoderUnkeyedContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CKEncoderKeyedContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CustomCloudkitKeyedEncoder.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CKEncoderSingleValueContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CloudKitRecordEncoder.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Decoder"
+         name = "Decoder">
+         <FileRef
+            location = "group:CKDecoderUnkeyedContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CKDecoderKeyedContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CKDecoderSingleValueContainer.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CloudKitRecordDecoder.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Extensions"
+         name = "Extensions">
+         <FileRef
+            location = "group:Array+CKRecord.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CKRecord.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:CustomCloudKitEncodable.swift">
+      </FileRef>
+      <Group
+         location = "group:Error"
+         name = "Error">
+         <FileRef
+            location = "group:CloudkitCodableError.swift">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
-      location = "self:NestedCloudKitCodable.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

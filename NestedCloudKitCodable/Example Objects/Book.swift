@@ -1,5 +1,5 @@
 //
-//  OtherObject.swift
+//  Book.swift
 //  CloudKitCodable
 //
 //  Created by Guilherme Girotto on 18/11/18.
@@ -8,16 +8,18 @@
 
 import Foundation
 
-struct OtherObject: CustomCloudKitCodable {
+struct Book: CKCodable {
     
     var cloudKitRecordType: String {
-        return "OtherObject"
+        return "Book"
     }
     
     var cloudKitIdentifier: String {
         return id
     }
     
-    private let id = UUID().uuidString
-    var name: String
+    var id = UUID().uuidString
+    var title: String
+    var pages: Int
+    var available: Bool
 }

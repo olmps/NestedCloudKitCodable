@@ -1,14 +1,14 @@
 //
-//  CloudkitCodableError.swift
-//  Hercules-iOS
+//  CKCodableError.swift
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 14/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import Foundation
 
-public struct CloudkitCodableError: Error {
+public struct CKCodableError: Error {
     
     enum ErrorType: String {
         
@@ -52,14 +52,14 @@ public struct CloudkitCodableError: Error {
     }
 }
 
-extension CloudkitCodableError: Equatable {
-    public static func == (lhs: CloudkitCodableError, rhs: CloudkitCodableError) -> Bool {
+extension CKCodableError: Equatable {
+    public static func == (lhs: CKCodableError, rhs: CKCodableError) -> Bool {
         return lhs.errorType.identifier == rhs.errorType.identifier
     }
 }
 
-extension CloudkitCodableError {
-    static func error(fromCloudkitError error: Error) -> CloudkitCodableError? {
-        return CloudkitCodableError(.cloudkitError, context: ["Error:": error])
+extension CKCodableError {
+    static func error(fromCloudkitError error: Error) -> CKCodableError? {
+        return CKCodableError(.cloudkitError, context: ["Error:": error])
     }
 }

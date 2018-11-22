@@ -1,9 +1,9 @@
 //
 //  CKEncoderUnkeyedContainer.swift
-//  Hercules-iOS
+//  NestedCloudKitCodable
 //
-//  Created by Guilherme Girotto on 14/11/18.
-//  Copyright © 2018 Hercules. All rights reserved.
+//  Created by Guilherme Girotto on 18/11/18.
+//  Copyright © 2018 Guilherme Girotto. All rights reserved.
 //
 
 import CloudKit
@@ -11,7 +11,7 @@ import Foundation
 
 internal class CKEncoderUnkeyedContainer: UnkeyedEncodingContainer {
     
-    private let object: CustomCloudKitEncodable
+    private let object: CKEncodable
     private let zoneID: CKRecordZone.ID?
     private var createdRecords: BoxedArray<CKRecord>
     var codingPath: [CodingKey]
@@ -23,7 +23,7 @@ internal class CKEncoderUnkeyedContainer: UnkeyedEncodingContainer {
         return elements[current]
     }
     
-    init(object: CustomCloudKitEncodable,
+    init(object: CKEncodable,
          zoneID: CKRecordZone.ID?,
          createdRecords: BoxedArray<CKRecord>,
          elements: [Decodable] = [],
@@ -78,7 +78,7 @@ extension CKEncoderUnkeyedContainer {
     func encodeNil() throws { }
     
     func encode<T>(_ value: T) throws where T: Encodable {
-        guard let encoderValue = value as? CustomCloudKitEncodable else {
+        guard let encoderValue = value as? CKEncodable else {
             return
         }
         let encoder = _CloudKitRecordEncoder(object: encoderValue,

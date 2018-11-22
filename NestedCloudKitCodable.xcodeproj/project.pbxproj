@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		635C75C721A1FE77009667DD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635C75C621A1FE77009667DD /* CloudKit.framework */; };
-		635C760021A1FEB2009667DD /* OtherObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75ED21A1FEB2009667DD /* OtherObject.swift */; };
-		635C760121A1FEB2009667DD /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75EE21A1FEB2009667DD /* Object.swift */; };
-		635C760221A1FEB2009667DD /* BoxedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F021A1FEB2009667DD /* BoxedArray.swift */; };
-		635C760321A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */; };
-		635C760421A1FEB2009667DD /* CKEncoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */; };
-		635C760521A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */; };
-		635C760621A1FEB2009667DD /* CKEncoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */; };
-		635C760721A1FEB2009667DD /* CloudKitRecordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */; };
-		635C760821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */; };
-		635C760921A1FEB2009667DD /* CKDecoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */; };
-		635C760A21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */; };
-		635C760B21A1FEB2009667DD /* CloudKitRecordDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */; };
-		635C760C21A1FEB2009667DD /* Array+CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */; };
-		635C760D21A1FEB2009667DD /* CustomCloudKitEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */; };
-		635C760E21A1FEB2009667DD /* CloudkitCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */; };
-		635C760F21A1FEB2009667DD /* CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C75FF21A1FEB2009667DD /* CKRecord.swift */; };
+		638F707921A2089100C9D014 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F707821A2089100C9D014 /* Person.swift */; };
+		638F708821A208D500C9D014 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDF27021A206B50033A6D4 /* School.swift */; };
+		638F708921A208D500C9D014 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDF26F21A206B50033A6D4 /* Book.swift */; };
+		639C8E2F21A6DB23006148E4 /* CKDecoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E1E21A6DB22006148E4 /* CKDecoderUnkeyedContainer.swift */; };
+		639C8E3021A6DB23006148E4 /* CKDecoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E1F21A6DB22006148E4 /* CKDecoderKeyedContainer.swift */; };
+		639C8E3121A6DB23006148E4 /* CKDecoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2021A6DB22006148E4 /* CKDecoderSingleValueContainer.swift */; };
+		639C8E3221A6DB23006148E4 /* CKRecordDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2121A6DB22006148E4 /* CKRecordDecoder.swift */; };
+		639C8E3321A6DB23006148E4 /* CKEncoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2321A6DB23006148E4 /* CKEncoderUnkeyedContainer.swift */; };
+		639C8E3421A6DB23006148E4 /* CKEncoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2421A6DB23006148E4 /* CKEncoderKeyedContainer.swift */; };
+		639C8E3521A6DB23006148E4 /* CKKeyedEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2521A6DB23006148E4 /* CKKeyedEncoder.swift */; };
+		639C8E3621A6DB23006148E4 /* CKEncoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2621A6DB23006148E4 /* CKEncoderSingleValueContainer.swift */; };
+		639C8E3721A6DB23006148E4 /* CKRecordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2721A6DB23006148E4 /* CKRecordEncoder.swift */; };
+		639C8E3821A6DB23006148E4 /* CKEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2821A6DB23006148E4 /* CKEncodable.swift */; };
+		639C8E3921A6DB23006148E4 /* BoxedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2A21A6DB23006148E4 /* BoxedArray.swift */; };
+		639C8E3A21A6DB23006148E4 /* CKCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2B21A6DB23006148E4 /* CKCodableError.swift */; };
+		639C8E3B21A6DB23006148E4 /* Array+CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2D21A6DB23006148E4 /* Array+CKRecord.swift */; };
+		639C8E3C21A6DB23006148E4 /* CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E2E21A6DB23006148E4 /* CKRecord.swift */; };
 		63E009E421A1FE2F0044B9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */; };
 		63E009E621A1FE2F0044B9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E009E521A1FE2F0044B9A8 /* ViewController.swift */; };
 		63E009E921A1FE2F0044B9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E009E721A1FE2F0044B9A8 /* Main.storyboard */; };
@@ -45,22 +46,23 @@
 /* Begin PBXFileReference section */
 		635C75C421A1FE75009667DD /* NestedCloudKitCodable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestedCloudKitCodable.entitlements; sourceTree = "<group>"; };
 		635C75C621A1FE77009667DD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		635C75ED21A1FEB2009667DD /* OtherObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherObject.swift; sourceTree = "<group>"; };
-		635C75EE21A1FEB2009667DD /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
-		635C75F021A1FEB2009667DD /* BoxedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedArray.swift; sourceTree = "<group>"; };
-		635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderUnkeyedContainer.swift; sourceTree = "<group>"; };
-		635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderKeyedContainer.swift; sourceTree = "<group>"; };
-		635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCloudkitKeyedEncoder.swift; sourceTree = "<group>"; };
-		635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderSingleValueContainer.swift; sourceTree = "<group>"; };
-		635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitRecordEncoder.swift; sourceTree = "<group>"; };
-		635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderUnkeyedContainer.swift; sourceTree = "<group>"; };
-		635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderKeyedContainer.swift; sourceTree = "<group>"; };
-		635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderSingleValueContainer.swift; sourceTree = "<group>"; };
-		635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitRecordDecoder.swift; sourceTree = "<group>"; };
-		635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CKRecord.swift"; sourceTree = "<group>"; };
-		635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCloudKitEncodable.swift; sourceTree = "<group>"; };
-		635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudkitCodableError.swift; sourceTree = "<group>"; };
-		635C75FF21A1FEB2009667DD /* CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecord.swift; sourceTree = "<group>"; };
+		638F707821A2089100C9D014 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		639C8E1E21A6DB22006148E4 /* CKDecoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderUnkeyedContainer.swift; sourceTree = "<group>"; };
+		639C8E1F21A6DB22006148E4 /* CKDecoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderKeyedContainer.swift; sourceTree = "<group>"; };
+		639C8E2021A6DB22006148E4 /* CKDecoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderSingleValueContainer.swift; sourceTree = "<group>"; };
+		639C8E2121A6DB22006148E4 /* CKRecordDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordDecoder.swift; sourceTree = "<group>"; };
+		639C8E2321A6DB23006148E4 /* CKEncoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderUnkeyedContainer.swift; sourceTree = "<group>"; };
+		639C8E2421A6DB23006148E4 /* CKEncoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderKeyedContainer.swift; sourceTree = "<group>"; };
+		639C8E2521A6DB23006148E4 /* CKKeyedEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKKeyedEncoder.swift; sourceTree = "<group>"; };
+		639C8E2621A6DB23006148E4 /* CKEncoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderSingleValueContainer.swift; sourceTree = "<group>"; };
+		639C8E2721A6DB23006148E4 /* CKRecordEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordEncoder.swift; sourceTree = "<group>"; };
+		639C8E2821A6DB23006148E4 /* CKEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncodable.swift; sourceTree = "<group>"; };
+		639C8E2A21A6DB23006148E4 /* BoxedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedArray.swift; sourceTree = "<group>"; };
+		639C8E2B21A6DB23006148E4 /* CKCodableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKCodableError.swift; sourceTree = "<group>"; };
+		639C8E2D21A6DB23006148E4 /* Array+CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CKRecord.swift"; sourceTree = "<group>"; };
+		639C8E2E21A6DB23006148E4 /* CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecord.swift; sourceTree = "<group>"; };
+		63CDF26F21A206B50033A6D4 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		63CDF27021A206B50033A6D4 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		63E009E021A1FE2F0044B9A8 /* NestedCloudKitCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCloudKitCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E009E521A1FE2F0044B9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,66 +102,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		635C75EC21A1FEB2009667DD /* Objects */ = {
+		639C8E1C21A6DB19006148E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				635C75ED21A1FEB2009667DD /* OtherObject.swift */,
-				635C75EE21A1FEB2009667DD /* Object.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		635C75EF21A1FEB2009667DD /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				635C761121A1FEC9009667DD /* Error */,
-				635C761021A1FEBE009667DD /* Extensions */,
-				635C75F121A1FEB2009667DD /* Encoder */,
-				635C75F721A1FEB2009667DD /* Decoder */,
-				635C75F021A1FEB2009667DD /* BoxedArray.swift */,
-				635C75FD21A1FEB2009667DD /* CustomCloudKitEncodable.swift */,
+				639C8E2A21A6DB23006148E4 /* BoxedArray.swift */,
+				639C8E2821A6DB23006148E4 /* CKEncodable.swift */,
+				639C8E1D21A6DB22006148E4 /* Decoder */,
+				639C8E2221A6DB23006148E4 /* Encoder */,
+				639C8E2921A6DB23006148E4 /* Error */,
+				639C8E2C21A6DB23006148E4 /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		635C75F121A1FEB2009667DD /* Encoder */ = {
+		639C8E1D21A6DB22006148E4 /* Decoder */ = {
 			isa = PBXGroup;
 			children = (
-				635C75F421A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift */,
-				635C75F621A1FEB2009667DD /* CloudKitRecordEncoder.swift */,
-				635C75F321A1FEB2009667DD /* CKEncoderKeyedContainer.swift */,
-				635C75F221A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift */,
-				635C75F521A1FEB2009667DD /* CKEncoderSingleValueContainer.swift */,
-			);
-			path = Encoder;
-			sourceTree = "<group>";
-		};
-		635C75F721A1FEB2009667DD /* Decoder */ = {
-			isa = PBXGroup;
-			children = (
-				635C75FB21A1FEB2009667DD /* CloudKitRecordDecoder.swift */,
-				635C75F921A1FEB2009667DD /* CKDecoderKeyedContainer.swift */,
-				635C75F821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift */,
-				635C75FA21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift */,
+				639C8E2121A6DB22006148E4 /* CKRecordDecoder.swift */,
+				639C8E1F21A6DB22006148E4 /* CKDecoderKeyedContainer.swift */,
+				639C8E1E21A6DB22006148E4 /* CKDecoderUnkeyedContainer.swift */,
+				639C8E2021A6DB22006148E4 /* CKDecoderSingleValueContainer.swift */,
 			);
 			path = Decoder;
 			sourceTree = "<group>";
 		};
-		635C761021A1FEBE009667DD /* Extensions */ = {
+		639C8E2221A6DB23006148E4 /* Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				635C75FC21A1FEB2009667DD /* Array+CKRecord.swift */,
-				635C75FF21A1FEB2009667DD /* CKRecord.swift */,
+				639C8E2521A6DB23006148E4 /* CKKeyedEncoder.swift */,
+				639C8E2721A6DB23006148E4 /* CKRecordEncoder.swift */,
+				639C8E2421A6DB23006148E4 /* CKEncoderKeyedContainer.swift */,
+				639C8E2321A6DB23006148E4 /* CKEncoderUnkeyedContainer.swift */,
+				639C8E2621A6DB23006148E4 /* CKEncoderSingleValueContainer.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		639C8E2921A6DB23006148E4 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				639C8E2B21A6DB23006148E4 /* CKCodableError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		639C8E2C21A6DB23006148E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				639C8E2D21A6DB23006148E4 /* Array+CKRecord.swift */,
+				639C8E2E21A6DB23006148E4 /* CKRecord.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		635C761121A1FEC9009667DD /* Error */ = {
+		63CDF26E21A206B50033A6D4 /* Example Objects */ = {
 			isa = PBXGroup;
 			children = (
-				635C75FE21A1FEB2009667DD /* CloudkitCodableError.swift */,
+				63CDF27021A206B50033A6D4 /* School.swift */,
+				63CDF26F21A206B50033A6D4 /* Book.swift */,
+				638F707821A2089100C9D014 /* Person.swift */,
 			);
-			path = Error;
+			path = "Example Objects";
 			sourceTree = "<group>";
 		};
 		63E009D721A1FE2F0044B9A8 = {
@@ -184,8 +187,8 @@
 		63E009E221A1FE2F0044B9A8 /* NestedCloudKitCodable */ = {
 			isa = PBXGroup;
 			children = (
-				635C75EF21A1FEB2009667DD /* Sources */,
-				635C75EC21A1FEB2009667DD /* Objects */,
+				639C8E1C21A6DB19006148E4 /* Sources */,
+				63CDF26E21A206B50033A6D4 /* Example Objects */,
 				635C75C421A1FE75009667DD /* NestedCloudKitCodable.entitlements */,
 				63E009E321A1FE2F0044B9A8 /* AppDelegate.swift */,
 				63E009E521A1FE2F0044B9A8 /* ViewController.swift */,
@@ -315,24 +318,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635C760221A1FEB2009667DD /* BoxedArray.swift in Sources */,
-				635C760A21A1FEB2009667DD /* CKDecoderSingleValueContainer.swift in Sources */,
+				638F707921A2089100C9D014 /* Person.swift in Sources */,
+				638F708921A208D500C9D014 /* Book.swift in Sources */,
+				639C8E3421A6DB23006148E4 /* CKEncoderKeyedContainer.swift in Sources */,
+				639C8E2F21A6DB23006148E4 /* CKDecoderUnkeyedContainer.swift in Sources */,
 				63E009E621A1FE2F0044B9A8 /* ViewController.swift in Sources */,
-				635C760421A1FEB2009667DD /* CKEncoderKeyedContainer.swift in Sources */,
-				635C760621A1FEB2009667DD /* CKEncoderSingleValueContainer.swift in Sources */,
-				635C760E21A1FEB2009667DD /* CloudkitCodableError.swift in Sources */,
-				635C760321A1FEB2009667DD /* CKEncoderUnkeyedContainer.swift in Sources */,
-				635C760921A1FEB2009667DD /* CKDecoderKeyedContainer.swift in Sources */,
+				639C8E3A21A6DB23006148E4 /* CKCodableError.swift in Sources */,
+				639C8E3621A6DB23006148E4 /* CKEncoderSingleValueContainer.swift in Sources */,
+				639C8E3821A6DB23006148E4 /* CKEncodable.swift in Sources */,
+				639C8E3121A6DB23006148E4 /* CKDecoderSingleValueContainer.swift in Sources */,
+				639C8E3021A6DB23006148E4 /* CKDecoderKeyedContainer.swift in Sources */,
+				639C8E3521A6DB23006148E4 /* CKKeyedEncoder.swift in Sources */,
+				639C8E3321A6DB23006148E4 /* CKEncoderUnkeyedContainer.swift in Sources */,
+				638F708821A208D500C9D014 /* School.swift in Sources */,
+				639C8E3921A6DB23006148E4 /* BoxedArray.swift in Sources */,
+				639C8E3721A6DB23006148E4 /* CKRecordEncoder.swift in Sources */,
+				639C8E3221A6DB23006148E4 /* CKRecordDecoder.swift in Sources */,
+				639C8E3C21A6DB23006148E4 /* CKRecord.swift in Sources */,
+				639C8E3B21A6DB23006148E4 /* Array+CKRecord.swift in Sources */,
 				63E009E421A1FE2F0044B9A8 /* AppDelegate.swift in Sources */,
-				635C760B21A1FEB2009667DD /* CloudKitRecordDecoder.swift in Sources */,
-				635C760721A1FEB2009667DD /* CloudKitRecordEncoder.swift in Sources */,
-				635C760121A1FEB2009667DD /* Object.swift in Sources */,
-				635C760821A1FEB2009667DD /* CKDecoderUnkeyedContainer.swift in Sources */,
-				635C760521A1FEB2009667DD /* CustomCloudkitKeyedEncoder.swift in Sources */,
-				635C760F21A1FEB2009667DD /* CKRecord.swift in Sources */,
-				635C760C21A1FEB2009667DD /* Array+CKRecord.swift in Sources */,
-				635C760021A1FEB2009667DD /* OtherObject.swift in Sources */,
-				635C760D21A1FEB2009667DD /* CustomCloudKitEncodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
