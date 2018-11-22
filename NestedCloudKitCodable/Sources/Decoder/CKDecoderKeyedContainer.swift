@@ -79,8 +79,10 @@ extension CKDecoderKeyedContainer {
     private func decodeCKRecordValue<T>(_ value: CKRecordValue, forKey key: Key) throws -> T where T: Decodable {
         
         if let asset = value as? CKAsset {
-            let data = try Data(contentsOf: asset.fileURL)
-            return data as! T
+            guard let data = try Data(contentsOf: asset.fileURL) as? T else {
+                throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert Data value to \(String(describing: T.self))"])
+            }
+            return data
         }
         
         if let assets = value as? [CKAsset] {
@@ -89,11 +91,18 @@ extension CKDecoderKeyedContainer {
                 let data = try Data(contentsOf: $0.fileURL)
                 datas.append(data)
             }
-            return datas as! T
+            guard let castedDatas = datas as? T else {
+                throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert [Data] value to \(String(describing: T.self))"])
+            }
+            return castedDatas
         }
         
         if let locationValue = value as? CLLocation {
-            return "\(locationValue.coordinate.latitude);\(locationValue.coordinate.longitude)" as! T
+            let locationStringValue = "\(locationValue.coordinate.latitude);\(locationValue.coordinate.longitude)"
+            guard let locationValue = locationStringValue as? T else {
+                throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert String value to \(String(describing: T.self))"])
+            }
+            return locationValue
         }
         
         if let locationsValues = value as? [CLLocation] {
@@ -102,11 +111,17 @@ extension CKDecoderKeyedContainer {
                 let value = "\($0.coordinate.latitude);\($0.coordinate.longitude)"
                 locations.append(value)
             }
-            return locations as! T
+            guard let castedLocations = locations as? T else {
+                throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert [String] value to \(String(describing: T.self))"])
+            }
+            return castedLocations
         }
         
-        return value as! T
+        guard let decodableValue = value as? T else {
+            throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert \(value) value to \(String(describing: T.self))"])
+        }
         
+        return decodableValue
     }
     
     private func decodeSingleReference<T>(_ reference: CKRecord.Reference, type: T.Type) throws -> T where T: Decodable {

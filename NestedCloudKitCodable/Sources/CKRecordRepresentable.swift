@@ -20,12 +20,6 @@ public extension CKRecordRepresentable {
     func ignoredProperties() -> [String] { return [] }
 }
 
-public protocol CKEncodable: CKRecordRepresentable & Encodable {
-    
-}
-
-public protocol CKDecodable: CKRecordRepresentable & Decodable {
-    
-}
-
-public protocol CKCodable: CKEncodable & CKDecodable { }
+public typealias CKEncodable = CKRecordRepresentable & Encodable
+public typealias CKDecodable = CKRecordRepresentable & Decodable
+public typealias CKCodable = CKEncodable & CKDecodable
