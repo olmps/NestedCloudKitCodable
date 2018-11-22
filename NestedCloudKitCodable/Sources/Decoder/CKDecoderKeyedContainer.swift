@@ -98,7 +98,7 @@ extension CKDecoderKeyedContainer {
         }
         
         if let locationValue = value as? CLLocation {
-            let locationStringValue = "\(locationValue.coordinate.latitude);\(locationValue.coordinate.longitude)"
+            let locationStringValue = "\(locationValue.coordinate.latitude)\(Constants.locationSeparator)\(locationValue.coordinate.longitude)"
             guard let locationValue = locationStringValue as? T else {
                 throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert String value to \(String(describing: T.self))"])
             }
@@ -108,7 +108,7 @@ extension CKDecoderKeyedContainer {
         if let locationsValues = value as? [CLLocation] {
             var locations = [String]()
             locationsValues.forEach {
-                let value = "\($0.coordinate.latitude);\($0.coordinate.longitude)"
+                let value = "\($0.coordinate.latitude)\(Constants.locationSeparator)\($0.coordinate.longitude)"
                 locations.append(value)
             }
             guard let castedLocations = locations as? T else {

@@ -32,8 +32,8 @@ internal class CKEncoderKeyedContainer<Key>: CKKeyedEncoder where Key: CodingKey
 extension CKEncoderKeyedContainer {
     
     var recordID: CKRecord.ID {
-        let zid = zoneID ?? CKRecordZone.ID(zoneName: CKRecordZone.ID.defaultZoneName, ownerName: CKCurrentUserDefaultName)
-        return CKRecord.ID(recordName: object.cloudKitIdentifier, zoneID: zid)
+        let normalizedZone = zoneID ?? CKRecordZone.ID(zoneName: CKRecordZone.ID.defaultZoneName, ownerName: CKCurrentUserDefaultName)
+        return CKRecord.ID(recordName: object.cloudKitIdentifier, zoneID: normalizedZone)
     }
     
     var generatedRecord: CKRecord {
@@ -106,46 +106,19 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
     private func encodeCKRecordValue(_ value: CKRecordValue, forKey key: Key) throws {
         
         if let data = value as? Data {
-            let tempStr = ProcessInfo.processInfo.globallyUniqueString
-            let filename = "\(tempStr)_file.bin"
-            let baseURL = URL(fileURLWithPath: NSTemporaryDirectory())
-            let fileURL = baseURL.appendingPathComponent(filename, isDirectory: false)
-            try data.write(to: fileURL, options: .atomic)
-            let asset = CKAsset(fileURL: fileURL)
-            storage[key.stringValue] = asset
-            return
+            try encodeData(data, forKey: key)
         }
         
         if let datas = value as? [Data] {
-            var assets = [CKAsset]()
-            for i in 0..<datas.count {
-                let data = datas[i]
-                let tempStr = ProcessInfo.processInfo.globallyUniqueString
-                let filename = "\(tempStr)_file.bin"
-                let baseURL = URL(fileURLWithPath: NSTemporaryDirectory())
-                let fileURL = baseURL.appendingPathComponent(filename, isDirectory: false)
-                try data.write(to: fileURL, options: .atomic)
-                let asset = CKAsset(fileURL: fileURL)
-                assets.append(asset)
-            }
-            storage[key.stringValue] = assets as CKRecordValue
+            try encodeDataArray(datas, forKey: key)
         }
         
         if let url = value as? URL {
-            let asset = CKAsset(fileURL: url)
-            storage[key.stringValue] = asset
-            return
+            encodeURL(url, forKey: key)
         }
         
         if let urls = value as? [URL] {
-            var assets = [CKAsset]()
-            for i in 0..<urls.count {
-                let url = urls[i]
-                let asset = CKAsset(fileURL: url)
-                assets.append(asset)
-            }
-            storage[key.stringValue] = assets as CKRecordValue
-            return
+            encodeURLArray(urls, forKey: key)
         }
         
         /**
@@ -154,40 +127,85 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
             this values is "lat;long".
          */
         if let locationString = value as? String,
-            locationString.contains(";") {
-            
-            let split = locationString.split(separator: ";")
-            
+            locationString.contains(Constants.locationSeparator) {
+            encodeLocation(fromString: locationString, forKey: key)
+        }
+        
+        if let locationsStrings = value as? [String],
+            let firstString = locationsStrings.first,
+            firstString.contains(Constants.locationSeparator) {
+            encodeLocations(fromStrings: locationsStrings, forKey: key)
+        }
+        
+        storage[key.stringValue] = value
+    }
+    
+    private func encodeData(_ value: Data, forKey key: Key) throws {
+        let tempStr = ProcessInfo.processInfo.globallyUniqueString
+        let filename = "\(tempStr)_file.bin"
+        let baseURL = URL(fileURLWithPath: NSTemporaryDirectory())
+        let fileURL = baseURL.appendingPathComponent(filename, isDirectory: false)
+        try value.write(to: fileURL, options: .atomic)
+        let asset = CKAsset(fileURL: fileURL)
+        storage[key.stringValue] = asset
+    }
+    
+    private func encodeDataArray(_ values: [Data], forKey key: Key) throws {
+        var assets = [CKAsset]()
+        for i in 0..<values.count {
+            let data = values[i]
+            let tempStr = ProcessInfo.processInfo.globallyUniqueString
+            let filename = "\(tempStr)_file.bin"
+            let baseURL = URL(fileURLWithPath: NSTemporaryDirectory())
+            let fileURL = baseURL.appendingPathComponent(filename, isDirectory: false)
+            try data.write(to: fileURL, options: .atomic)
+            let asset = CKAsset(fileURL: fileURL)
+            assets.append(asset)
+        }
+        storage[key.stringValue] = assets as CKRecordValue
+    }
+    
+    private func encodeURL(_ value: URL, forKey key: Key) {
+        let asset = CKAsset(fileURL: value)
+        storage[key.stringValue] = asset
+    }
+    
+    private func encodeURLArray(_ values: [URL], forKey key: Key) {
+        var assets = [CKAsset]()
+        for i in 0..<values.count {
+            let url = values[i]
+            let asset = CKAsset(fileURL: url)
+            assets.append(asset)
+        }
+        storage[key.stringValue] = assets as CKRecordValue
+    }
+    
+    private func encodeLocation(fromString value: String, forKey key: Key) {
+        let split = value.split(separator: Constants.locationSeparator)
+        
+        guard let latitude = Double(split[0]),
+            let longitude = Double(split[1]) else {
+                storage[key.stringValue] = nil
+                return
+        }
+        
+        storage[key.stringValue] = CLLocation(latitude: latitude, longitude: longitude)
+    }
+    
+    private func encodeLocations(fromStrings values: [String], forKey key: Key) {
+        var locations = [CLLocation]()
+        values.forEach {
+            let split = $0.split(separator: Constants.locationSeparator)
             guard let latitude = Double(split[0]),
                 let longitude = Double(split[1]) else {
                     storage[key.stringValue] = nil
                     return
             }
-            
-            storage[key.stringValue] = CLLocation(latitude: latitude, longitude: longitude)
-            return
+            let location = CLLocation(latitude: latitude, longitude: longitude)
+            locations.append(location)
         }
         
-        if let locationsStrings = value as? [String],
-            let firstString = locationsStrings.first,
-            firstString.contains(";") {
-            
-            var locations = [CLLocation]()
-            locationsStrings.forEach {
-                let split = $0.split(separator: ";")
-                guard let latitude = Double(split[0]),
-                    let longitude = Double(split[1]) else {
-                        storage[key.stringValue] = nil
-                        return
-                }
-                let location = CLLocation(latitude: latitude, longitude: longitude)
-                locations.append(location)
-            }
-            
-            storage[key.stringValue] = locations as CKRecordValue
-        }
-        
-        storage[key.stringValue] = value
+        storage[key.stringValue] = locations as CKRecordValue
     }
     
     private func produceReference(for value: CKEncodable) throws -> CKRecord.Reference {

@@ -30,7 +30,7 @@ extension CKDecoderSingleValueContainer {
     
     func decode<T>(_ type: T.Type) throws -> T where T : Decodable {
         let decoder = _CKRecordDecoder(records: records,
-                                             recordBeingAnalyzed: recordBeingAnalyzed)
+                                       recordBeingAnalyzed: recordBeingAnalyzed)
         return try T(from: decoder)
     }
     

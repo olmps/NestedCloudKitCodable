@@ -33,6 +33,7 @@
 		639C8E7721A6E16E006148E4 /* Array+CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6521A6E16E006148E4 /* Array+CKRecord.swift */; };
 		639C8E7821A6E16E006148E4 /* CKRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6621A6E16E006148E4 /* CKRecord.swift */; };
 		639C8E7921A6E16E006148E4 /* CKCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6821A6E16E006148E4 /* CKCodableError.swift */; };
+		63FC021221A71AF4006D5A8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC021121A71AF4006D5A8D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		639C8E6521A6E16E006148E4 /* Array+CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CKRecord.swift"; sourceTree = "<group>"; };
 		639C8E6621A6E16E006148E4 /* CKRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecord.swift; sourceTree = "<group>"; };
 		639C8E6821A6E16E006148E4 /* CKCodableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKCodableError.swift; sourceTree = "<group>"; };
+		63FC021121A71AF4006D5A8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				639C8E5721A6E16E006148E4 /* BoxedArray.swift */,
 				639C8E5E21A6E16E006148E4 /* CKRecordRepresentable.swift */,
+				63FC021121A71AF4006D5A8D /* Constants.swift */,
 				639C8E5821A6E16E006148E4 /* Encoder */,
 				639C8E5F21A6E16E006148E4 /* Decoder */,
 				639C8E6421A6E16E006148E4 /* Extensions */,
@@ -364,6 +367,7 @@
 				639C8E7221A6E16E006148E4 /* CKRecordRepresentable.swift in Sources */,
 				639C8E7121A6E16E006148E4 /* CKRecordEncoder.swift in Sources */,
 				639C8E6D21A6E16E006148E4 /* CKEncoderUnkeyedContainer.swift in Sources */,
+				63FC021221A71AF4006D5A8D /* Constants.swift in Sources */,
 				639C8E7821A6E16E006148E4 /* CKRecord.swift in Sources */,
 				639C8E7421A6E16E006148E4 /* CKDecoderKeyedContainer.swift in Sources */,
 				639C8E6E21A6E16E006148E4 /* CKEncoderKeyedContainer.swift in Sources */,
