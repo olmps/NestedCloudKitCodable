@@ -8,6 +8,7 @@
 
 import CoreLocation
 import UIKit
+import NestedCloudKitCodable
 
 struct School: CKCodable {
     

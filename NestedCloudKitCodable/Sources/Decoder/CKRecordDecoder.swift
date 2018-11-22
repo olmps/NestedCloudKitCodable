@@ -24,7 +24,7 @@ public class CKRecordDecoder {
         - parameter completion: Closure with the decoded object or an error. The error is from type `CloudkitCodableError` and
         it has a description associated explaining what may have happened
      */
-    func decode<T>(_ type: T.Type,
+    public func decode<T>(_ type: T.Type,
                    from record: CKRecord,
                    referenceDatabase database: CKDatabase,
                    completion: @escaping (_ result: T?, _ error: CKCodableError?) -> Void) where T: Decodable {
@@ -58,7 +58,7 @@ public class CKRecordDecoder {
                                            referenceDatabase database: CKDatabase,
                                            completion: @escaping ([CKRecord]?, CKCodableError?) -> Void) {
         let query = CKFetchRecordsOperation(recordIDs: references.map { $0.recordID })
-        query.fetchRecordsCompletionBlock = { [unowned self] (recordsDictionary, error) in
+        query.fetchRecordsCompletionBlock = { (recordsDictionary, error) in
             if let receivedError = error {
                 let error = CKCodableError.error(fromCloudkitError: receivedError)
                 completion(nil, error)
@@ -103,7 +103,7 @@ public class CKRecordDecoder {
         }
         
         if existantReferences.isEmpty {
-            completion(recordsStack, nil)
+            completion(actualRecordsStack, nil)
         } else {
             fetchAllAssociatedRecords(fromReferences: existantReferences,
                                       recordsStack: recordsStack,

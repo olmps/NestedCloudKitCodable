@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631B8A0321A6E4FB0045FADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B8A0221A6E4FB0045FADC /* AppDelegate.swift */; };
+		631B8A0521A6E4FB0045FADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B8A0421A6E4FB0045FADC /* ViewController.swift */; };
+		631B8A0821A6E4FB0045FADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631B8A0621A6E4FB0045FADC /* Main.storyboard */; };
+		631B8A0A21A6E4FD0045FADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631B8A0921A6E4FD0045FADC /* Assets.xcassets */; };
+		631B8A0D21A6E4FD0045FADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631B8A0B21A6E4FD0045FADC /* LaunchScreen.storyboard */; };
+		631B8A1A21A6E5690045FADC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631B8A1921A6E5690045FADC /* CloudKit.framework */; };
+		631B8A1B21A6E5FC0045FADC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5321A6E16D006148E4 /* Person.swift */; };
+		631B8A1C21A6E5FC0045FADC /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5421A6E16D006148E4 /* School.swift */; };
+		631B8A1D21A6E5FC0045FADC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5521A6E16D006148E4 /* Book.swift */; };
+		631B8A1E21A6E81B0045FADC /* NestedCloudKitCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C8E4721A6E154006148E4 /* NestedCloudKitCodable.framework */; };
+		631B8A1F21A6E81B0045FADC /* NestedCloudKitCodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639C8E4721A6E154006148E4 /* NestedCloudKitCodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639C8E4C21A6E154006148E4 /* NestedCloudKitCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 639C8E4A21A6E154006148E4 /* NestedCloudKitCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639C8E6921A6E16E006148E4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5321A6E16D006148E4 /* Person.swift */; };
-		639C8E6A21A6E16E006148E4 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5421A6E16D006148E4 /* School.swift */; };
-		639C8E6B21A6E16E006148E4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5521A6E16D006148E4 /* Book.swift */; };
 		639C8E6C21A6E16E006148E4 /* BoxedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5721A6E16E006148E4 /* BoxedArray.swift */; };
 		639C8E6D21A6E16E006148E4 /* CKEncoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5921A6E16E006148E4 /* CKEncoderUnkeyedContainer.swift */; };
 		639C8E6E21A6E16E006148E4 /* CKEncoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5A21A6E16E006148E4 /* CKEncoderKeyedContainer.swift */; };
 		639C8E6F21A6E16E006148E4 /* CKKeyedEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5B21A6E16E006148E4 /* CKKeyedEncoder.swift */; };
 		639C8E7021A6E16E006148E4 /* CKEncoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5C21A6E16E006148E4 /* CKEncoderSingleValueContainer.swift */; };
 		639C8E7121A6E16E006148E4 /* CKRecordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5D21A6E16E006148E4 /* CKRecordEncoder.swift */; };
-		639C8E7221A6E16E006148E4 /* CKEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5E21A6E16E006148E4 /* CKEncodable.swift */; };
+		639C8E7221A6E16E006148E4 /* CKRecordRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E5E21A6E16E006148E4 /* CKRecordRepresentable.swift */; };
 		639C8E7321A6E16E006148E4 /* CKDecoderUnkeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6021A6E16E006148E4 /* CKDecoderUnkeyedContainer.swift */; };
 		639C8E7421A6E16E006148E4 /* CKDecoderKeyedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6121A6E16E006148E4 /* CKDecoderKeyedContainer.swift */; };
 		639C8E7521A6E16E006148E4 /* CKDecoderSingleValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6221A6E16E006148E4 /* CKDecoderSingleValueContainer.swift */; };
@@ -27,7 +35,40 @@
 		639C8E7921A6E16E006148E4 /* CKCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C8E6821A6E16E006148E4 /* CKCodableError.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		631B8A2021A6E81B0045FADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639C8E3E21A6E154006148E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639C8E4621A6E154006148E4;
+			remoteInfo = NestedCloudKitCodable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		631B8A2221A6E81B0045FADC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				631B8A1F21A6E81B0045FADC /* NestedCloudKitCodable.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		631B8A0021A6E4FB0045FADC /* NestedCKCodableExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCKCodableExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		631B8A0221A6E4FB0045FADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		631B8A0421A6E4FB0045FADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		631B8A0721A6E4FB0045FADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		631B8A0921A6E4FD0045FADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		631B8A0C21A6E4FD0045FADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		631B8A0E21A6E4FD0045FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631B8A1721A6E5660045FADC /* NestedCKCodableExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestedCKCodableExamples.entitlements; sourceTree = "<group>"; };
+		631B8A1921A6E5690045FADC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		639C8E4721A6E154006148E4 /* NestedCloudKitCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedCloudKitCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639C8E4A21A6E154006148E4 /* NestedCloudKitCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedCloudKitCodable.h; sourceTree = "<group>"; };
 		639C8E4B21A6E154006148E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +81,7 @@
 		639C8E5B21A6E16E006148E4 /* CKKeyedEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKKeyedEncoder.swift; sourceTree = "<group>"; };
 		639C8E5C21A6E16E006148E4 /* CKEncoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncoderSingleValueContainer.swift; sourceTree = "<group>"; };
 		639C8E5D21A6E16E006148E4 /* CKRecordEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordEncoder.swift; sourceTree = "<group>"; };
-		639C8E5E21A6E16E006148E4 /* CKEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKEncodable.swift; sourceTree = "<group>"; };
+		639C8E5E21A6E16E006148E4 /* CKRecordRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordRepresentable.swift; sourceTree = "<group>"; };
 		639C8E6021A6E16E006148E4 /* CKDecoderUnkeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderUnkeyedContainer.swift; sourceTree = "<group>"; };
 		639C8E6121A6E16E006148E4 /* CKDecoderKeyedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderKeyedContainer.swift; sourceTree = "<group>"; };
 		639C8E6221A6E16E006148E4 /* CKDecoderSingleValueContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDecoderSingleValueContainer.swift; sourceTree = "<group>"; };
@@ -51,6 +92,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		631B89FD21A6E4FB0045FADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631B8A1A21A6E5690045FADC /* CloudKit.framework in Frameworks */,
+				631B8A1E21A6E81B0045FADC /* NestedCloudKitCodable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639C8E4421A6E154006148E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,11 +111,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631B8A0121A6E4FB0045FADC /* NestedCKCodableExamples */ = {
+			isa = PBXGroup;
+			children = (
+				639C8E5221A6E16D006148E4 /* Example Objects */,
+				631B8A1721A6E5660045FADC /* NestedCKCodableExamples.entitlements */,
+				631B8A0221A6E4FB0045FADC /* AppDelegate.swift */,
+				631B8A0421A6E4FB0045FADC /* ViewController.swift */,
+				631B8A0621A6E4FB0045FADC /* Main.storyboard */,
+				631B8A0921A6E4FD0045FADC /* Assets.xcassets */,
+				631B8A0B21A6E4FD0045FADC /* LaunchScreen.storyboard */,
+				631B8A0E21A6E4FD0045FADC /* Info.plist */,
+			);
+			path = NestedCKCodableExamples;
+			sourceTree = "<group>";
+		};
+		631B8A1821A6E5690045FADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				631B8A1921A6E5690045FADC /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		639C8E3D21A6E154006148E4 = {
 			isa = PBXGroup;
 			children = (
 				639C8E4921A6E154006148E4 /* NestedCloudKitCodable */,
+				631B8A0121A6E4FB0045FADC /* NestedCKCodableExamples */,
 				639C8E4821A6E154006148E4 /* Products */,
+				631B8A1821A6E5690045FADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				639C8E4721A6E154006148E4 /* NestedCloudKitCodable.framework */,
+				631B8A0021A6E4FB0045FADC /* NestedCKCodableExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				639C8E5621A6E16E006148E4 /* Sources */,
-				639C8E5221A6E16D006148E4 /* Example Objects */,
 				639C8E4A21A6E154006148E4 /* NestedCloudKitCodable.h */,
 				639C8E4B21A6E154006148E4 /* Info.plist */,
 			);
@@ -102,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				639C8E5721A6E16E006148E4 /* BoxedArray.swift */,
-				639C8E5E21A6E16E006148E4 /* CKEncodable.swift */,
+				639C8E5E21A6E16E006148E4 /* CKRecordRepresentable.swift */,
 				639C8E5821A6E16E006148E4 /* Encoder */,
 				639C8E5F21A6E16E006148E4 /* Decoder */,
 				639C8E6421A6E16E006148E4 /* Extensions */,
@@ -165,6 +240,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		631B89FF21A6E4FB0045FADC /* NestedCKCodableExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631B8A1121A6E4FD0045FADC /* Build configuration list for PBXNativeTarget "NestedCKCodableExamples" */;
+			buildPhases = (
+				631B89FC21A6E4FB0045FADC /* Sources */,
+				631B89FD21A6E4FB0045FADC /* Frameworks */,
+				631B89FE21A6E4FB0045FADC /* Resources */,
+				631B8A2221A6E81B0045FADC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				631B8A2121A6E81B0045FADC /* PBXTargetDependency */,
+			);
+			name = NestedCKCodableExamples;
+			productName = NestedCKCodableExamples;
+			productReference = 631B8A0021A6E4FB0045FADC /* NestedCKCodableExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 		639C8E4621A6E154006148E4 /* NestedCloudKitCodable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 639C8E4F21A6E154006148E4 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable" */;
@@ -189,9 +283,21 @@
 		639C8E3E21A6E154006148E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Guilherme Girotto";
 				TargetAttributes = {
+					631B89FF21A6E4FB0045FADC = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
 					639C8E4621A6E154006148E4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -203,18 +309,30 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 639C8E3D21A6E154006148E4;
 			productRefGroup = 639C8E4821A6E154006148E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				631B89FF21A6E4FB0045FADC /* NestedCKCodableExamples */,
 				639C8E4621A6E154006148E4 /* NestedCloudKitCodable */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		631B89FE21A6E4FB0045FADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631B8A0D21A6E4FD0045FADC /* LaunchScreen.storyboard in Resources */,
+				631B8A0A21A6E4FD0045FADC /* Assets.xcassets in Resources */,
+				631B8A0821A6E4FB0045FADC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639C8E4521A6E154006148E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,33 +343,111 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		631B89FC21A6E4FB0045FADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631B8A1B21A6E5FC0045FADC /* Person.swift in Sources */,
+				631B8A0521A6E4FB0045FADC /* ViewController.swift in Sources */,
+				631B8A0321A6E4FB0045FADC /* AppDelegate.swift in Sources */,
+				631B8A1D21A6E5FC0045FADC /* Book.swift in Sources */,
+				631B8A1C21A6E5FC0045FADC /* School.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639C8E4321A6E154006148E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				639C8E6C21A6E16E006148E4 /* BoxedArray.swift in Sources */,
 				639C8E7521A6E16E006148E4 /* CKDecoderSingleValueContainer.swift in Sources */,
-				639C8E7221A6E16E006148E4 /* CKEncodable.swift in Sources */,
+				639C8E7221A6E16E006148E4 /* CKRecordRepresentable.swift in Sources */,
 				639C8E7121A6E16E006148E4 /* CKRecordEncoder.swift in Sources */,
 				639C8E6D21A6E16E006148E4 /* CKEncoderUnkeyedContainer.swift in Sources */,
-				639C8E6921A6E16E006148E4 /* Person.swift in Sources */,
 				639C8E7821A6E16E006148E4 /* CKRecord.swift in Sources */,
 				639C8E7421A6E16E006148E4 /* CKDecoderKeyedContainer.swift in Sources */,
 				639C8E6E21A6E16E006148E4 /* CKEncoderKeyedContainer.swift in Sources */,
 				639C8E7921A6E16E006148E4 /* CKCodableError.swift in Sources */,
 				639C8E6F21A6E16E006148E4 /* CKKeyedEncoder.swift in Sources */,
-				639C8E6A21A6E16E006148E4 /* School.swift in Sources */,
 				639C8E7321A6E16E006148E4 /* CKDecoderUnkeyedContainer.swift in Sources */,
 				639C8E7621A6E16E006148E4 /* CKRecordDecoder.swift in Sources */,
 				639C8E7021A6E16E006148E4 /* CKEncoderSingleValueContainer.swift in Sources */,
 				639C8E7721A6E16E006148E4 /* Array+CKRecord.swift in Sources */,
-				639C8E6B21A6E16E006148E4 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		631B8A2121A6E81B0045FADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 639C8E4621A6E154006148E4 /* NestedCloudKitCodable */;
+			targetProxy = 631B8A2021A6E81B0045FADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		631B8A0621A6E4FB0045FADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				631B8A0721A6E4FB0045FADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		631B8A0B21A6E4FD0045FADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				631B8A0C21A6E4FD0045FADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		631B8A0F21A6E4FD0045FADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCKCodableExamples/NestedCKCodableExamples.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCKCodableExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCKCodableExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		631B8A1021A6E4FD0045FADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCKCodableExamples/NestedCKCodableExamples.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCKCodableExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCKCodableExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		639C8E4D21A6E154006148E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -304,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -362,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -429,6 +625,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		631B8A1121A6E4FD0045FADC /* Build configuration list for PBXNativeTarget "NestedCKCodableExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631B8A0F21A6E4FD0045FADC /* Debug */,
+				631B8A1021A6E4FD0045FADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		639C8E4121A6E154006148E4 /* Build configuration list for PBXProject "NestedCloudKitCodable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

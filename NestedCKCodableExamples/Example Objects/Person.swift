@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import NestedCloudKitCodable
 
 struct Person: CKCodable {
     
@@ -16,18 +17,16 @@ struct Person: CKCodable {
     }
     
     var cloudKitIdentifier: String {
-        return identifier
+        return id
     }
     
     var id = UUID().uuidString
     var picture: UIImage
-    var identifier: String
     var name: String
     var birthDate: Date
     
     init(name: String, birthDate: Date) {
-        self.picture = UIImage(named: "userImage")!
-        self.identifier = UUID().uuidString
+        self.picture = UIImage(named: "default-user")!
         self.name = name
         self.birthDate = birthDate
     }
@@ -42,7 +41,7 @@ struct Person: CKCodable {
         let dataPicture = try container.decode(Data.self, forKey: .picture)
         self.picture = UIImage(data: dataPicture)!
         
-        self.identifier = try container.decode(String.self, forKey: .identifier)
+        self.id = try container.decode(String.self, forKey: .identifier)
         self.name = try container.decode(String.self, forKey: .name)
         self.birthDate = try container.decode(Date.self, forKey: .birthDate)
     }
@@ -52,7 +51,7 @@ struct Person: CKCodable {
         
         let pictureDate = picture.pngData()!
         try container.encode(pictureDate, forKey: .picture)
-        try container.encode(identifier, forKey: .identifier)
+        try container.encode(id, forKey: .identifier)
         try container.encode(name, forKey: .name)
         try container.encode(birthDate, forKey: .birthDate)
     }

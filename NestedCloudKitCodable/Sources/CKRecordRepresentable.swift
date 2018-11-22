@@ -1,5 +1,5 @@
 //
-//  CKEncodable.swift
+//  CKRecordRepresentable.swift
 //  NestedCloudKitCodable
 //
 //  Created by Guilherme Girotto on 18/11/18.
@@ -16,7 +16,7 @@ public protocol CKRecordRepresentable {
     func ignoredProperties() -> [String]
 }
 
-extension CKRecordRepresentable {
+public extension CKRecordRepresentable {
     func ignoredProperties() -> [String] { return [] }
 }
 
