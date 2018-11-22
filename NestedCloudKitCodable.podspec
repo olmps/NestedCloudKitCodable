@@ -12,8 +12,9 @@ Pod::Spec.new do |s|
   s.license      = "BS2D-2-Clause"
   s.author             = { "Guilherme Girotto" => "guiga741@gmail.com" }
   s.platform     = :ios, "10.0"
+  s.swift_version = '4.2'
   s.source       = { :git => "https://github.com/ggirotto/NestedCloudkitCodable.git", :tag => s.version.to_s }
-  s.source_files  = "Sources/**/*.swift"
+  s.source_files  = "NestedCloudKitCodable/Sources/**/*.swift"
   s.ios.frameworks = "CloudKit", "Foundation"
 
 end
