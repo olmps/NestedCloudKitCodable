@@ -4,6 +4,34 @@ Provides a simple way of Encoding and Decoding custom objects to/from Cloudkit t
 
 Inspired by [CloudkitCodable](https://github.com/insidegui/CloudKitCodable).
 
+## Installation
+
+### CocoaPods
+
+Add the following entry to your Podfile:
+
+```rb
+pod 'NestedCloudKitCodable'
+```
+
+Then run `pod install`.
+
+### Carthage
+
+Add the following entry to your `Cartfile`:
+
+```
+github "ggirotto/NestedCloudkitCodable"
+```
+
+Then run `carthage update`.
+
+If this is your first time using Carthage in the project, see [Carthage docs](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for extra install steps.
+
+### Manually
+
+- Drag the **Sources** folder anywhere in your project.
+
 ## Usage
 
 ### `CKCodable` protocol
