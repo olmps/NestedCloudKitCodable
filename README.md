@@ -1,6 +1,6 @@
 # NestedCloudkitCodable
 
-Provides a simple way of Encoding and Decoding custom objects to/from Cloudkit through custom `Encoder` and `Decoder` which converts your structure to `CKRecord` and vice-versa. It can be use with nested objects.
+Provides a simple way of Encoding and Decoding custom objects to/from Cloudkit through custom `Encoder` and `Decoder` which converts your structure to `CKRecord` and vice-versa. It can be used with nested objects.
 
 Inspired by [CloudkitCodable](https://github.com/insidegui/CloudKitCodable).
 
@@ -123,14 +123,14 @@ CKRecordDecoder().decode(School.self,
 }
 ```
 
-Note that `decode` function is asynchronous. This is necessary because when your object has nested objects associated, the decode function fetch all `CKRecords` from this nested objects before decoding the original one. In the example above, the `decode` funciton will fetch all records from `students`,  `books` and `director` nested objects before decoding the main `School` object.
+Note that `decode` function is asynchronous. This is necessary because when your object has nested objects associated, the decode function fetch all `CKRecords` from these nested objects before decoding the original one. In the example above, the `decode` function will fetch all records from `students`,  `books` and `director` nested objects before decoding the main `School` object.
 
-Also, it's necessary to send the `referenceDatabase` which this records will be looked for.
+Also, it's necessary to send the `referenceDatabase` which these records will be looked for.
 
 You can find this example objects [here](https://github.com/ggirotto/NestedCloudkitCodable/tree/master/NestedCloudKitCodable/Example%20Objects)
 
-## Feedbakc/Contribution
+## Feedback/Contribution
 
-Thanks for using this library! If you are experiencing some kind of trouble in it's usage or have noticed some inconsistence or bug, please create an issue so I can investigate it.
+Thanks for using this library! If you are experiencing some trouble in its usage or have noticed some inconsistency or bug, please create an issue so I can investigate it.
 
 Also feel free to contribute to the project by creating a PR :)
