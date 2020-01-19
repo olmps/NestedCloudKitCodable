@@ -127,7 +127,7 @@ Note that `decode` function is asynchronous. This is necessary because when your
 
 Also, it's necessary to send the `referenceDatabase` which these records will be looked for.
 
-You can find this example objects [here](https://github.com/ggirotto/NestedCloudkitCodable/tree/master/NestedCloudKitCodable/Example%20Objects)
+You can find this example objects [here](https://github.com/ggirotto/NestedCloudkitCodable/tree/master/NestedCKCodableExamples/Example%20Objects)
 
 ## Feedback/Contribution
 
