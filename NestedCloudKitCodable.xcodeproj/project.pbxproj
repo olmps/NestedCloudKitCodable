@@ -48,8 +48,6 @@
 		635FE21F21B05AAB00C2BC5F /* CKCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635FE20221B05AAB00C2BC5F /* CKCodableError.swift */; };
 		635FE22021B05AAB00C2BC5F /* CKCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635FE20221B05AAB00C2BC5F /* CKCodableError.swift */; };
 		635FE22121B05B4D00C2BC5F /* NestedCloudKitCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 635FE1E721B05A7400C2BC5F /* NestedCloudKitCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		635FE22221B05B8500C2BC5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635FE1E821B05A7400C2BC5F /* Info.plist */; };
-		635FE22321B05B8500C2BC5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635FE1E821B05A7400C2BC5F /* Info.plist */; };
 		635FE22521B05CFC00C2BC5F /* NestedCloudKitCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635FE1E521B05A7300C2BC5F /* NestedCloudKitCodable.framework */; };
 		635FE22621B05CFC00C2BC5F /* NestedCloudKitCodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 635FE1E521B05A7300C2BC5F /* NestedCloudKitCodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		635FE22F21B05D6300C2BC5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635FE22D21B05D6300C2BC5F /* Interface.storyboard */; };
@@ -481,7 +479,7 @@
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Guilherme Girotto";
 				TargetAttributes = {
 					631B89FF21A6E4FB0045FADC = {
@@ -506,6 +504,7 @@
 					};
 					635FE23621B05D6500C2BC5F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -546,7 +545,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635FE22321B05B8500C2BC5F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +552,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635FE22221B05B8500C2BC5F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,7 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCKCodableExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -734,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermegirotto.NestedCKCodableExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -761,7 +758,7 @@
 				PRODUCT_NAME = NestedCloudKitCodable;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -789,7 +786,7 @@
 				PRODUCT_NAME = NestedCloudKitCodable;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -816,7 +813,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guilhermegirotto.NestedCloudKitCodable-iOS";
 				PRODUCT_NAME = NestedCloudKitCodable;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -842,7 +839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guilhermegirotto.NestedCloudKitCodable-iOS";
 				PRODUCT_NAME = NestedCloudKitCodable;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -863,7 +860,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
@@ -885,7 +882,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};

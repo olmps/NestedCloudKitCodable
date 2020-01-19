@@ -79,7 +79,7 @@ extension CKDecoderKeyedContainer {
     private func decodeCKRecordValue<T>(_ value: CKRecordValue, forKey key: Key) throws -> T where T: Decodable {
         
         if let asset = value as? CKAsset {
-            guard let data = try Data(contentsOf: asset.fileURL) as? T else {
+            guard let assetURL = asset.fileURL, let data = try Data(contentsOf: assetURL) as? T else {
                 throw CKCodableError(.typeMismatch, context: ["Error:": "Couldn't convert Data value to \(String(describing: T.self))"])
             }
             return data
@@ -87,8 +87,9 @@ extension CKDecoderKeyedContainer {
         
         if let assets = value as? [CKAsset] {
             var datas = [Data]()
-            try assets.forEach {
-                let data = try Data(contentsOf: $0.fileURL)
+            for asset in assets {
+                guard let assetURL = asset.fileURL else { continue }
+                let data = try Data(contentsOf: assetURL)
                 datas.append(data)
             }
             guard let castedDatas = datas as? T else {
