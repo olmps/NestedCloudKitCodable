@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NestedCloudKitCodable'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = "Nested encoder and decoder for CKRecords."
   s.description      = <<-DESC
                 NestedCloudKitCodable is a library to help you encode your custom objects to CloudKit CKRecord format
