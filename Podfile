@@ -13,3 +13,10 @@ target 'NestedCloudKitCodableWatch Extension' do
   shared_pods
 end
 
+target 'NestedCloudKitCodableTvOS' do
+  shared_pods
+end
+
+target 'NestedCloudKitCodableMacOS' do
+  shared_pods
+end
