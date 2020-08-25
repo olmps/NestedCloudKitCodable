@@ -1,5 +1,5 @@
 PODS:
-  - NestedCloudKitCodable (1.0.1)
+  - NestedCloudKitCodable (1.0.2)
   - SwiftLint (0.40.0)
 
 DEPENDENCIES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  NestedCloudKitCodable: 63768a8144410309c836d97d1750f8fad5c45a71
+  NestedCloudKitCodable: d400d9dd9662e1476558d4f5d351a30cbb07e701
   SwiftLint: 4154893c73a4c52d6240195507eb7a3e3c64087e
 
-PODFILE CHECKSUM: 3c6b4eff28207ac4e4bdd3a3f0d4a2d9a815c981
+PODFILE CHECKSUM: 2ffe4c6d25cbfb6b22eb4b0a78b0a2359a4bb4f2
 
 COCOAPODS: 1.9.3
