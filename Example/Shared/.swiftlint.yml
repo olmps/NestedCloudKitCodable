@@ -1,0 +1,167 @@
+opt_in_rules: # some rules are only opt-in (not enabled by the default config), so we will evaluate each one of them individually
+    - anyobject_protocol
+    - array_init
+    - closure_body_length #
+    - closure_end_indentation
+    - closure_spacing
+    - collection_alignment
+    ## - conditional_returns_on_newline -> RATIONALE: We don't want to limit "quick" returns
+    - contains_over_filter_count
+    - contains_over_filter_is_empty
+    - contains_over_first_not_nil
+    - contains_over_range_nil_comparison
+    - convenience_type
+    - discouraged_object_literal
+    ## - discouraged_optional_boolean -> RATIONALE: We don't want to limit this state of a "property that may not exist".
+    ## - discouraged_optional_collection -> RATIONALE: Same as `discouraged_optional_boolean`
+    - empty_collection_literal
+    - empty_count
+    - empty_string
+    # - empty_xctest_method -> RATIONALE: Not currently testing
+    ## - expiring_todo -> RATIONALE: Won't use this TODO+Date date due to external date dependencies
+    ## - explicit_acl -> RATIONALE: We don't want to limit Swift inference and be more verbose
+    # - explicit_enum_raw_value
+    - explicit_init
+    ## - explicit_self -> RATIONALE: Same as `explicit_acl`
+    ## - explicit_top_level_acl -> RATIONALE: Same as `explicit_acl`
+    ## - explicit_type_interface -> RATIONALE: Same as `explicit_acl`
+    ## - extension_access_modifier -> RATIONALE: Same as `explicit_acl`
+    - fallthrough
+    - fatal_error_message
+    # - file_header -> TODO!
+    # - file_name -> RATIONALE: This should be used whenever specific patterns are required to be excluded from file names.
+    - file_name_no_space
+    # - file_types_order -> RATIONALE: Too harsh to new developers "understand" how the ordering should be done. Might be decent in a solo project though.
+    - first_where
+    - flatmap_over_map_reduce
+    - force_unwrapping
+    - function_default_parameter_at_end
+    - identical_operands
+    - implicit_return
+    - implicitly_unwrapped_optional
+    # - indentation_width -> EXPERIMENTAL: Don't use it yet, but re-evaluate in a near future.
+    - joined_default_parameter
+    - last_where
+    - legacy_multiple
+    - legacy_random
+    - let_var_whitespace
+    - literal_expression_end_indentation
+    - lower_acl_than_parent
+    # - missing_docs -> RATIONALE: Not everything needs documentation, some declarations are self-explanatory.
+    - modifier_order
+    # - multiline_arguments -> RATIONALE: Can turn functions into monsters to read if they are a bit more verbose than usual.
+    # - multiline_arguments_brackets -> RATIONALE: Same as `multiline_arguments`
+    - multiline_function_chains
+    - multiline_literal_brackets
+    # - multiline_parameters -> RATIONALE: Same as `multiline_arguments`
+    # - multiline_parameters_brackets -> RATIONALE: Same as `multiline_arguments`
+    - number_separator
+    - nimble_operator
+    - no_extension_access_modifier
+    # - no_grouping_extension -> RATIONALE: Separating each extension in each file would generate an enormous quantity of files, given that Swift language has an awesome usage of Extension.
+    - nslocalizedstring_key
+    - nslocalizedstring_require_bundle
+    ## - object_literal -> RATIONALE: We prefer `discouraged_object_literal`.
+    - operator_usage_whitespace
+    - optional_enum_case_matching
+    - orphaned_doc_comment
+    - overridden_super_call
+    # - override_in_extension -> RATIONALE: We don't want to block this possibility as it apparently doesn't benefit us in any way.
+    - pattern_matching_keywords
+    - prefer_self_type_over_type_of_self
+    # - prefixed_toplevel_constant -> RATIONALE: This is an outdated ObjC approach.
+    - private_action
+    - private_outlet
+    # - prohibited_interface_builder -> RATIONALE: We are doing a MVVM + Xib, so we use IB.
+    - prohibited_super_call
+    # - quick_discouraged_focused_test -> RATIONALE: Quick related framework, we aren't using it.
+    # - quick_discouraged_pending_test -> RATIONALE: Same as `quick_discouraged_focused_test`
+    # - raw_value_for_camel_cased_codable_enum -> RATIONALE: Conflicts with `explicit_enum_raw_value`, where it's already "solved"
+    - reduce_into
+    - redundant_nil_coalescing
+    # - redundant_string_enum_value -> RATIONALE: We want the developer to explicitly tell the enum values, as it may introduce non-intended behavior.
+    - redundant_type_annotation
+    # - required_deinit -> RATIONALE: Deinit are - in most applications - more less than 50% of the classes, so we won't required all to explicitly declare it.
+    # - required_enum_case -> RATIONALE: Somewhat complex, didn't quite fully understand the rule.
+    # - single_test_class -> RATIONALE: Not currently testing
+    - sorted_first_last
+    - sorted_imports
+    - static_operator
+    - strict_fileprivate
+    - strong_iboutlet
+    # - switch_case_on_newline -> RATIONALE: We don't want to limit "inline" syntax
+    - toggle_bool
+    # - type_contents_order -> RATIONALE: Same as `file_types_order`
+    - unavailable_function
+    - unneeded_parentheses_in_closure_argument
+    # - unowned_variable_capture -> RATIONALE: This is the Developer's responsibility of knowing when to use weak/unowned - we shouldn't be blocking the usage of such keyword due do the lack of language fundamentals.
+    # - untyped_error_in_catch -> RATIONALE: Frequently we will have to deal with third party libraries, meaning that we don't have control on what they could exactly throw (or even, they could throw a lot of errors that we just want to get the message)
+    - unused_declaration
+    - unused_import
+    - vertical_parameter_alignment_on_call
+    # - vertical_whitespace_between_cases -> RATIONALE: Not useful to include this, as it doesn't introduce anything relevant
+    - vertical_whitespace_closing_braces
+    - vertical_whitespace_opening_braces
+    # xct_specific_matcher -> RATIONALE: Not currently testing
+    - yoda_condition
+
+#disabled_rules:
+#    - identifier_name ## CHECK
+
+excluded:
+    - Pods
+
+# Customized rules
+
+#cyclomatic_complexity:
+#    warning: 10
+#    error: 15
+#    ignores_case_statements: false
+
+enum_case_associated_values_count:
+    warning: 4
+    error: 5
+
+file_length:
+    warning: 500
+    error: 700
+
+force_cast:
+    severity: warning
+
+function_body_length:
+    warning: 40
+    error: 80
+
+function_parameter_count:
+    warning: 10
+    error: 10
+
+line_length:
+    warning: 120
+    error: 160
+
+identifier_name:
+    excluded: [id, ui, vm, no, go]
+
+#force_cast:
+#  severity: warning
+
+number_separator:
+    minimum_length: 9
+
+trailing_closure:
+    only_single_muted_parameter: true
+
+type_body_length:
+    warning: 200
+    error: 300
+
+#nesting:
+#  type_level:
+#    warning: 2
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+reporter: "xcode"

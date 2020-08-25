@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6375386724F5347D0093936D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6375386524F5347D0093936D /* Interface.storyboard */; };
+		6375386924F5347E0093936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6375386824F5347E0093936D /* Assets.xcassets */; };
+		6375387024F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6375386F24F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6375387524F5347E0093936D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375387424F5347E0093936D /* InterfaceController.swift */; };
+		6375387724F5347E0093936D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375387624F5347E0093936D /* ExtensionDelegate.swift */; };
+		6375387924F5347E0093936D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375387824F5347E0093936D /* NotificationController.swift */; };
+		6375387B24F5347F0093936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6375387A24F5347F0093936D /* Assets.xcassets */; };
+		6375388024F5347F0093936D /* NestedCloudKitCodableWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6375386324F5347D0093936D /* NestedCloudKitCodableWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63CDFCE624F53D5800535338 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 63CDFCE524F53D5800535338 /* .swiftlint.yml */; };
+		63CDFCEF24F5463200535338 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCEC24F5463200535338 /* Person.swift */; };
+		63CDFCF024F5463200535338 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCEC24F5463200535338 /* Person.swift */; };
+		63CDFCF124F5463200535338 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCED24F5463200535338 /* School.swift */; };
+		63CDFCF224F5463200535338 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCED24F5463200535338 /* School.swift */; };
+		63CDFCF324F5463200535338 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCEE24F5463200535338 /* Book.swift */; };
+		63CDFCF424F5463200535338 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CDFCEE24F5463200535338 /* Book.swift */; };
+		63CDFCF624F5477E00535338 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CDFCE224F53C9400535338 /* CloudKit.framework */; };
+		63CDFCF924F548CA00535338 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CDFCF824F548CA00535338 /* CloudKit.framework */; };
+		8011DD3B0E24841922CB71E0 /* Pods_NestedCloudKitCodableWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D684D4A5ADC1B80DE549AC1 /* Pods_NestedCloudKitCodableWatch_Extension.framework */; };
+		C0EAEC3F0110E6FB3AF85CF7 /* Pods_NestedCloudKitCodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8906E910405E991310C19543 /* Pods_NestedCloudKitCodable_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = NestedCloudKitCodable;
+		};
+		6375387124F5347E0093936D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6375386E24F5347E0093936D;
+			remoteInfo = "NestedCloudKitCodableWatch Extension";
+		};
+		6375387E24F5347F0093936D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6375386224F5347D0093936D;
+			remoteInfo = NestedCloudKitCodableWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6375388424F5347F0093936D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6375387024F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6375388824F5347F0093936D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6375388024F5347F0093936D /* NestedCloudKitCodableWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C317EAC5221C243DE94C3EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		448EA0CAC2EE895A4AB1035C /* NestedCloudKitCodable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NestedCloudKitCodable.podspec; path = ../NestedCloudKitCodable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4D1A1D2999571E761C262CBD /* Pods-NestedCloudKitCodableWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedCloudKitCodableWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-NestedCloudKitCodableWatch Extension/Pods-NestedCloudKitCodableWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4D684D4A5ADC1B80DE549AC1 /* Pods_NestedCloudKitCodableWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedCloudKitCodableWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* NestedCloudKitCodable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCloudKitCodable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* NestedCloudKitCodable_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedCloudKitCodable_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6375386324F5347D0093936D /* NestedCloudKitCodableWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCloudKitCodableWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6375386624F5347D0093936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6375386824F5347E0093936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6375386A24F5347E0093936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6375386F24F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NestedCloudKitCodableWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6375387424F5347E0093936D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6375387624F5347E0093936D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6375387824F5347E0093936D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6375387A24F5347F0093936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6375387C24F5347F0093936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6375387D24F5347F0093936D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63CDFCE224F53C9400535338 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		63CDFCE524F53D5800535338 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		63CDFCEC24F5463200535338 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		63CDFCED24F5463200535338 /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		63CDFCEE24F5463200535338 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		63CDFCF524F5477900535338 /* NestedCloudKitCodable_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestedCloudKitCodable_Example.entitlements; sourceTree = "<group>"; };
+		63CDFCF724F548C800535338 /* NestedCloudKitCodableWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NestedCloudKitCodableWatch Extension.entitlements"; sourceTree = "<group>"; };
+		63CDFCF824F548CA00535338 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		7376C32C936677E0CEBE449F /* Pods-NestedCloudKitCodable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedCloudKitCodable_Example.release.xcconfig"; path = "Target Support Files/Pods-NestedCloudKitCodable_Example/Pods-NestedCloudKitCodable_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8906E910405E991310C19543 /* Pods_NestedCloudKitCodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedCloudKitCodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA492D0FADE74C567232078 /* Pods-NestedCloudKitCodable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedCloudKitCodable_Example.debug.xcconfig"; path = "Target Support Files/Pods-NestedCloudKitCodable_Example/Pods-NestedCloudKitCodable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FC4D2C189FAEC4C0353DF36F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FDA9833F52685A369F4D91F0 /* Pods-NestedCloudKitCodableWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedCloudKitCodableWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-NestedCloudKitCodableWatch Extension/Pods-NestedCloudKitCodableWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0EAEC3F0110E6FB3AF85CF7 /* Pods_NestedCloudKitCodable_Example.framework in Frameworks */,
+				63CDFCF624F5477E00535338 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6375386C24F5347E0093936D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8011DD3B0E24841922CB71E0 /* Pods_NestedCloudKitCodableWatch_Extension.framework in Frameworks */,
+				63CDFCF924F548CA00535338 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83210C717CA29F4E6FCA0B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				63CDFCF524F5477900535338 /* NestedCloudKitCodable_Example.entitlements */,
+				63CDFCE424F53D3D00535338 /* Shared */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for NestedCloudKitCodable */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				6375386424F5347D0093936D /* NestedCloudKitCodableWatch */,
+				6375387324F5347E0093936D /* NestedCloudKitCodableWatch Extension */,
+				607FACD11AFB9204008FA782 /* Products */,
+				DE36032D0B463F3F662B7B0D /* Pods */,
+				81B9F31A1FFF406D8C6E849F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* NestedCloudKitCodable_Example.app */,
+				607FACE51AFB9204008FA782 /* NestedCloudKitCodable_Tests.xctest */,
+				6375386324F5347D0093936D /* NestedCloudKitCodableWatch.app */,
+				6375386F24F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for NestedCloudKitCodable */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = "Example for NestedCloudKitCodable";
+			path = NestedCloudKitCodable;
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				448EA0CAC2EE895A4AB1035C /* NestedCloudKitCodable.podspec */,
+				0C317EAC5221C243DE94C3EB /* README.md */,
+				FC4D2C189FAEC4C0353DF36F /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6375386424F5347D0093936D /* NestedCloudKitCodableWatch */ = {
+			isa = PBXGroup;
+			children = (
+				6375386524F5347D0093936D /* Interface.storyboard */,
+				6375386824F5347E0093936D /* Assets.xcassets */,
+				6375386A24F5347E0093936D /* Info.plist */,
+			);
+			path = NestedCloudKitCodableWatch;
+			sourceTree = "<group>";
+		};
+		6375387324F5347E0093936D /* NestedCloudKitCodableWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63CDFCF724F548C800535338 /* NestedCloudKitCodableWatch Extension.entitlements */,
+				6375387424F5347E0093936D /* InterfaceController.swift */,
+				6375387624F5347E0093936D /* ExtensionDelegate.swift */,
+				6375387824F5347E0093936D /* NotificationController.swift */,
+				6375387A24F5347F0093936D /* Assets.xcassets */,
+				6375387C24F5347F0093936D /* Info.plist */,
+				6375387D24F5347F0093936D /* PushNotificationPayload.apns */,
+			);
+			path = "NestedCloudKitCodableWatch Extension";
+			sourceTree = "<group>";
+		};
+		63CDFCE424F53D3D00535338 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				63CDFCEB24F5463200535338 /* Example Objects */,
+				63CDFCE524F53D5800535338 /* .swiftlint.yml */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		63CDFCEB24F5463200535338 /* Example Objects */ = {
+			isa = PBXGroup;
+			children = (
+				63CDFCEC24F5463200535338 /* Person.swift */,
+				63CDFCED24F5463200535338 /* School.swift */,
+				63CDFCEE24F5463200535338 /* Book.swift */,
+			);
+			path = "Example Objects";
+			sourceTree = "<group>";
+		};
+		81B9F31A1FFF406D8C6E849F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63CDFCF824F548CA00535338 /* CloudKit.framework */,
+				63CDFCE224F53C9400535338 /* CloudKit.framework */,
+				8906E910405E991310C19543 /* Pods_NestedCloudKitCodable_Example.framework */,
+				4D684D4A5ADC1B80DE549AC1 /* Pods_NestedCloudKitCodableWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE36032D0B463F3F662B7B0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAA492D0FADE74C567232078 /* Pods-NestedCloudKitCodable_Example.debug.xcconfig */,
+				7376C32C936677E0CEBE449F /* Pods-NestedCloudKitCodable_Example.release.xcconfig */,
+				4D1A1D2999571E761C262CBD /* Pods-NestedCloudKitCodableWatch Extension.debug.xcconfig */,
+				FDA9833F52685A369F4D91F0 /* Pods-NestedCloudKitCodableWatch Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* NestedCloudKitCodable_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable_Example" */;
+			buildPhases = (
+				C5BDFE6BD561CFB83680DD59 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				7D2574A8ADA7243969EE0AF7 /* [CP] Embed Pods Frameworks */,
+				6375388824F5347F0093936D /* Embed Watch Content */,
+				63CDFCE724F53DF000535338 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6375387F24F5347F0093936D /* PBXTargetDependency */,
+			);
+			name = NestedCloudKitCodable_Example;
+			productName = NestedCloudKitCodable;
+			productReference = 607FACD01AFB9204008FA782 /* NestedCloudKitCodable_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* NestedCloudKitCodable_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable_Tests" */;
+			buildPhases = (
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = NestedCloudKitCodable_Tests;
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* NestedCloudKitCodable_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6375386224F5347D0093936D /* NestedCloudKitCodableWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6375388524F5347F0093936D /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableWatch" */;
+			buildPhases = (
+				6375386124F5347D0093936D /* Resources */,
+				6375388424F5347F0093936D /* Embed App Extensions */,
+				83210C717CA29F4E6FCA0B05 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6375387224F5347E0093936D /* PBXTargetDependency */,
+			);
+			name = NestedCloudKitCodableWatch;
+			productName = NestedCloudKitCodableWatch;
+			productReference = 6375386324F5347D0093936D /* NestedCloudKitCodableWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6375386E24F5347E0093936D /* NestedCloudKitCodableWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6375388124F5347F0093936D /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableWatch Extension" */;
+			buildPhases = (
+				C031BE1FC0DE13D4F2E02F18 /* [CP] Check Pods Manifest.lock */,
+				6375386B24F5347E0093936D /* Sources */,
+				6375386C24F5347E0093936D /* Frameworks */,
+				6375386D24F5347E0093936D /* Resources */,
+				1CBF5C41922822373C9CB29B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NestedCloudKitCodableWatch Extension";
+			productName = "NestedCloudKitCodableWatch Extension";
+			productReference = 6375386F24F5347E0093936D /* NestedCloudKitCodableWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 583UZTNE98;
+						LastSwiftMigration = 0900;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 583UZTNE98;
+						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					6375386224F5347D0093936D = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = 583UZTNE98;
+						ProvisioningStyle = Automatic;
+					};
+					6375386E24F5347E0093936D = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = 583UZTNE98;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NestedCloudKitCodable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* NestedCloudKitCodable_Example */,
+				607FACE41AFB9204008FA782 /* NestedCloudKitCodable_Tests */,
+				6375386224F5347D0093936D /* NestedCloudKitCodableWatch */,
+				6375386E24F5347E0093936D /* NestedCloudKitCodableWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CDFCE624F53D5800535338 /* .swiftlint.yml in Resources */,
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6375386124F5347D0093936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6375386924F5347E0093936D /* Assets.xcassets in Resources */,
+				6375386724F5347D0093936D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6375386D24F5347E0093936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6375387B24F5347F0093936D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CBF5C41922822373C9CB29B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NestedCloudKitCodableWatch Extension/Pods-NestedCloudKitCodableWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NestedCloudKitCodable-watchOS/NestedCloudKitCodable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NestedCloudKitCodable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NestedCloudKitCodableWatch Extension/Pods-NestedCloudKitCodableWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63CDFCE724F53DF000535338 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\ncd ../NestedCloudKitCodable\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
+		};
+		7D2574A8ADA7243969EE0AF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NestedCloudKitCodable_Example/Pods-NestedCloudKitCodable_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NestedCloudKitCodable-iOS/NestedCloudKitCodable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NestedCloudKitCodable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NestedCloudKitCodable_Example/Pods-NestedCloudKitCodable_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C031BE1FC0DE13D4F2E02F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedCloudKitCodableWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5BDFE6BD561CFB83680DD59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedCloudKitCodable_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CDFCEF24F5463200535338 /* Person.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				63CDFCF324F5463200535338 /* Book.swift in Sources */,
+				63CDFCF124F5463200535338 /* School.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6375386B24F5347E0093936D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6375387924F5347E0093936D /* NotificationController.swift in Sources */,
+				6375387724F5347E0093936D /* ExtensionDelegate.swift in Sources */,
+				63CDFCF424F5463200535338 /* Book.swift in Sources */,
+				63CDFCF024F5463200535338 /* Person.swift in Sources */,
+				63CDFCF224F5463200535338 /* School.swift in Sources */,
+				6375387524F5347E0093936D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* NestedCloudKitCodable_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		6375387224F5347E0093936D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6375386E24F5347E0093936D /* NestedCloudKitCodableWatch Extension */;
+			targetProxy = 6375387124F5347E0093936D /* PBXContainerItemProxy */;
+		};
+		6375387F24F5347F0093936D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6375386224F5347D0093936D /* NestedCloudKitCodableWatch */;
+			targetProxy = 6375387E24F5347F0093936D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDA1AFB9204008FA782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6375386524F5347D0093936D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6375386624F5347D0093936D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA492D0FADE74C567232078 /* Pods-NestedCloudKitCodable_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCloudKitCodable_Example.entitlements;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7376C32C936677E0CEBE449F /* Pods-NestedCloudKitCodable_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NestedCloudKitCodable_Example.entitlements;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				INFOPLIST_FILE = NestedCloudKitCodable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedCloudKitCodable_Example.app/NestedCloudKitCodable_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NestedCloudKitCodable_Example.app/NestedCloudKitCodable_Example";
+			};
+			name = Release;
+		};
+		6375388224F5347F0093936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1A1D2999571E761C262CBD /* Pods-NestedCloudKitCodableWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "NestedCloudKitCodableWatch Extension/NestedCloudKitCodableWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "NestedCloudKitCodableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NestedCloudKitCodable-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		6375388324F5347F0093936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA9833F52685A369F4D91F0 /* Pods-NestedCloudKitCodableWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "NestedCloudKitCodableWatch Extension/NestedCloudKitCodableWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "NestedCloudKitCodableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NestedCloudKitCodable-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		6375388624F5347F0093936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = NestedCloudKitCodableWatch_Extension;
+				INFOPLIST_FILE = NestedCloudKitCodableWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NestedCloudKitCodable-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		6375388724F5347F0093936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 583UZTNE98;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = NestedCloudKitCodableWatch_Extension;
+				INFOPLIST_FILE = NestedCloudKitCodableWatch/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NestedCloudKitCodable-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NestedCloudKitCodable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NestedCloudKitCodable_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6375388124F5347F0093936D /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6375388224F5347F0093936D /* Debug */,
+				6375388324F5347F0093936D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6375388524F5347F0093936D /* Build configuration list for PBXNativeTarget "NestedCloudKitCodableWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6375388624F5347F0093936D /* Debug */,
+				6375388724F5347F0093936D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
