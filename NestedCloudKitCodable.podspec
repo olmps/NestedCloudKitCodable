@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author                    = { 'ggirotto' => 'guiga741@gmail.com' }
   s.source                    = { :git => 'https://github.com/olmps/NestedCloudKitCodable.git', :tag => s.version.to_s }
   s.framework                 = "CloudKit"
-  s.source_files              = "NestedCloudKitCodable/Classes/**/*.swift"
+  s.source_files              = "Source/Classes/**/*.swift"
   s.ios.deployment_target     = '10.0'
   s.watchos.deployment_target = '4.0'
   s.swift_version             = '5.0'

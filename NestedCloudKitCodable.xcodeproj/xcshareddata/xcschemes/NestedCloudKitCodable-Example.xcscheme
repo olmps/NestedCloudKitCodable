@@ -61,6 +61,16 @@
                ReferencedContainer = "container:NestedCloudKitCodable.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "635A0E8A24F562C4002BC7AD"
+               BuildableName = "NestedCloudKitCodableTests.xctest"
+               BlueprintName = "NestedCloudKitCodableTests"
+               ReferencedContainer = "container:NestedCloudKitCodable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

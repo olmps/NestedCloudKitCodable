@@ -2,7 +2,7 @@ use_frameworks!
 
 def shared_pods
   pod 'SwiftLint'
-  pod 'NestedCloudKitCodable', :path => '../'
+  pod 'NestedCloudKitCodable', :path => './'
 end
 
 target 'NestedCloudKitCodable_Example' do

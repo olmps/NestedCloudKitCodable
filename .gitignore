@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/xcode,cocoapods,carthage,swift
-# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,cocoapods,carthage,swift
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods,carthage
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,cocoapods,carthage
 
 ### Carthage ###
 # Carthage
@@ -118,4 +118,4 @@ iOSInjectionProject/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,cocoapods,carthage,swift
+# End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods,carthage
