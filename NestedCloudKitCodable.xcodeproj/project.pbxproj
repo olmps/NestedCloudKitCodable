@@ -172,6 +172,7 @@
 		6375387A24F5347F0093936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6375387C24F5347F0093936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6375387D24F5347F0093936D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6382668424F67A7000E6DC97 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		63A249A124F567BB008C8C56 /* NestedCKCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedCKCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A249A324F567BB008C8C56 /* NestedCKCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedCKCodable.h; sourceTree = "<group>"; };
 		63A249B524F567E9008C8C56 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -196,7 +197,7 @@
 		63A249E124F56A65008C8C56 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		63A24A0424F57E0B008C8C56 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		63A24A0524F57E0B008C8C56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63A24A0624F57E0B008C8C56 /* NestedCloudKitCodable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NestedCloudKitCodable.podspec; sourceTree = "<group>"; };
+		63A24A0624F57E0B008C8C56 /* NestedCloudKitCodable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NestedCloudKitCodable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		63CDFCE224F53C9400535338 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		63CDFCE524F53D5800535338 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		63CDFCEC24F5463200535338 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -364,6 +365,7 @@
 				63A24A0624F57E0B008C8C56 /* NestedCloudKitCodable.podspec */,
 				63A24A0424F57E0B008C8C56 /* LICENSE */,
 				63A24A0524F57E0B008C8C56 /* README.md */,
+				6382668424F67A7000E6DC97 /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -1699,7 +1701,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nestedCloudKit.NestedCKCodable;
@@ -1734,7 +1736,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nestedCloudKit.NestedCKCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
