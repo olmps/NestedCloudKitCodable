@@ -199,7 +199,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
     }
 
     private func produceReference(for value: CKEncodable) throws -> CKRecord.Reference {
-        let recordID = CKRecord.ID(recordName: value.cloudKitIdentifier)
+        let recordID = CKRecord.ID(recordName: value.cloudKitIdentifier, zoneID: zoneID ?? .default)
         return CKRecord.Reference(recordID: recordID, action: .deleteSelf)
     }
 
