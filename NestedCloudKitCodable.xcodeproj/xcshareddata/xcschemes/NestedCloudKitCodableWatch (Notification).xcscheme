@@ -56,10 +56,8 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "NestedCloudKitCodableWatch Extension/PushNotificationPayload.apns">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/NestedCloudKitCodable_Example">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6375386224F5347D0093936D"
@@ -67,7 +65,7 @@
             BlueprintName = "NestedCloudKitCodableWatch"
             ReferencedContainer = "container:NestedCloudKitCodable.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -77,10 +75,8 @@
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "NestedCloudKitCodableWatch Extension/PushNotificationPayload.apns">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/NestedCloudKitCodable_Example">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6375386224F5347D0093936D"
@@ -88,16 +84,7 @@
             BlueprintName = "NestedCloudKitCodableWatch"
             ReferencedContainer = "container:NestedCloudKitCodable.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6375386224F5347D0093936D"
-            BuildableName = "NestedCloudKitCodableWatch.app"
-            BlueprintName = "NestedCloudKitCodableWatch"
-            ReferencedContainer = "container:NestedCloudKitCodable.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,54 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-g8-jiG">
+                                <rect key="frame" x="135.5" y="280.5" width="104" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXo-LC-48C">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                        <state key="normal" title="Encode School"/>
+                                        <connections>
+                                            <action selector="encodeTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jlj-KU-QRw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiC-5R-2CI">
+                                        <rect key="frame" x="0.0" y="76" width="104" height="30"/>
+                                        <state key="normal" title="Decode School"/>
+                                        <connections>
+                                            <action selector="decodeTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dij-fo-U3D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Eww-Al-f3S">
+                                <rect key="frame" x="177" y="202" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dX-sG-QHO">
+                                <rect key="frame" x="36" y="406.5" width="303" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7dX-sG-QHO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="3bc-Ql-8bV"/>
+                            <constraint firstItem="V4e-g8-jiG" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="BrR-68-BGl"/>
+                            <constraint firstItem="V4e-g8-jiG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Gi6-5A-yM4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7dX-sG-QHO" secondAttribute="trailing" constant="20" id="YKG-Gd-pCz"/>
+                            <constraint firstItem="7dX-sG-QHO" firstAttribute="top" secondItem="V4e-g8-jiG" secondAttribute="bottom" constant="20" id="fpC-hI-TzX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Eww-Al-f3S" id="KPu-yj-ogP"/>
+                        <outlet property="resultLabel" destination="7dX-sG-QHO" id="oIP-0h-4KP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-295" y="134"/>
         </scene>
     </scenes>
 </document>
