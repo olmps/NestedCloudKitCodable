@@ -12,6 +12,11 @@ import NestedCloudKitCodable
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var resultLabel: UILabel!
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+
+    private var schoolRecord: CKRecord?
+
     private var director: Person {
         return Person(name: "Director", birthDate: Date())
     }
@@ -37,13 +42,7 @@ class ViewController: UIViewController {
         return [book1, book2]
     }
 
-    private var database: CKDatabase {
-        return CKContainer(identifier: "iCloud.com.nestedCloudKitCodable.Container").publicCloudDatabase
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    private var school: School {
         var schoolObject = School()
         schoolObject.name = "School Name"
         schoolObject.location = CLLocation(latitude: 37.331274, longitude: -122.030397)
@@ -51,33 +50,66 @@ class ViewController: UIViewController {
         schoolObject.director = director
         schoolObject.books = books
 
+        return schoolObject
+    }
+
+    private var database: CKDatabase {
+        return CKContainer(identifier: "iCloud.com.nestedCloudKitCodable.Container").publicCloudDatabase
+    }
+
+    @IBAction private func encodeTapped(_ sender: UIButton) {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        resultLabel.text = "Loading..."
+
         do {
-            let encodedRecords = try CKRecordEncoder().encode(schoolObject)
+            let encodedRecords = try CKRecordEncoder().encode(school)
+            schoolRecord = encodedRecords.last
 
             let saveOperator = CKModifyRecordsOperation(recordsToSave: encodedRecords)
             saveOperator.modifyRecordsCompletionBlock = { (records, recordsIDs, error) in
-                if let error = error {
-                    print(error)
-                } else {
-                    self.decodeSchool(encodedRecords.last!)
+                DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+
+                    if let error = error {
+                        print(error)
+                        self.resultLabel.text = "Error: \(error.localizedDescription)"
+                    } else {
+                        self.resultLabel.text = "Successfully encoded school object!"
+                    }
                 }
             }
 
             database.add(saveOperator)
         } catch let error {
             let formattedError = error as! CKCodableError //swiftlint:disable:this force_cast
-            print(formattedError)
+            resultLabel.text = "Error: \(formattedError.localizedDescription)"
         }
     }
 
-    private func decodeSchool(_ schoolRecord: CKRecord) {
+    @IBAction private func decodeTapped(_ sender: UIButton) {
+        guard let schoolRecord = schoolRecord else {
+            resultLabel.text = "Please encode the object first"
+            return
+        }
+
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        resultLabel.text = "Loading..."
+
         CKRecordDecoder().decode(School.self,
                                  from: schoolRecord,
                                  referenceDatabase: database) { (decodedSchool, error) in
-            if let error = error {
-                print(error)
-            } else if let decodedSchool = decodedSchool {
-                print(decodedSchool)
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+
+                if let error = error {
+                    print(error)
+                    self.resultLabel.text = "Error: \(error.localizedDescription)"
+                } else if let decodedSchool = decodedSchool {
+                    self.resultLabel.text = "Successfully encoded school object!"
+                    print(decodedSchool)
+                }
             }
         }
     }
