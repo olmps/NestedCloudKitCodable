@@ -161,6 +161,7 @@
 		630DDFD824F5C13300537AD5 /* NestedCloudKitCodableMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestedCloudKitCodableMacOS.entitlements; sourceTree = "<group>"; };
 		635A0E8B24F562C4002BC7AD /* NestedCloudKitCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedCloudKitCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635A0EF824F56516002BC7AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63658A6525CC31FE0000C747 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		6375386324F5347D0093936D /* NestedCloudKitCodableWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedCloudKitCodableWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6375386624F5347D0093936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6375386824F5347E0093936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				63658A6525CC31FE0000C747 /* Package.swift */,
 				63A249B324F567E9008C8C56 /* Source */,
 				63CDFCF524F5477900535338 /* NestedCloudKitCodable_Example.entitlements */,
 				63CDFCE424F53D3D00535338 /* Shared */,
