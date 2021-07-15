@@ -14,10 +14,12 @@ public protocol CKRecordRepresentable {
     var cloudKitIdentifier: String { get }
 
     func ignoredProperties() -> [String]
+    func cloudKitReferenceActions() -> [String: CKRecord.ReferenceAction]
 }
 
 public extension CKRecordRepresentable {
     func ignoredProperties() -> [String] { return [] }
+    func cloudKitReferenceActions() -> [String: CKRecord.ReferenceAction] { return [:] }
 }
 
 public typealias CKEncodable = CKRecordRepresentable & Encodable
