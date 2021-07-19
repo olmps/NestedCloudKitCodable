@@ -71,7 +71,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
     // MARK: Auxiliar Encode functions
 
     private func encodeSingleValue(_ value: CKEncodable, forKey key: Key) throws {
-        storage[key.stringValue] = try produceReference(for: value)
+        storage[key.stringValue] = try produceReference(for: value, key: key)
 
         let encoder = CloudKitRecordEncoder(object: value, zoneID: zoneID, createdRecords: createdRecords)
 
@@ -87,7 +87,7 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
                                          forKey key: Key) throws where T: Encodable {
         var references = [CKRecord.Reference]()
         try castedValues.forEach {
-            let reference = try produceReference(for: $0)
+            let reference = try produceReference(for: $0, key: key)
             references.append(reference)
         }
         storage[key.stringValue] = references as CKRecordValue
@@ -198,9 +198,11 @@ extension CKEncoderKeyedContainer: KeyedEncodingContainerProtocol {
         storage[key.stringValue] = locations as CKRecordValue
     }
 
-    private func produceReference(for value: CKEncodable) throws -> CKRecord.Reference {
+    private func produceReference(for value: CKEncodable, key: Key) throws -> CKRecord.Reference {
         let recordID = CKRecord.ID(recordName: value.cloudKitIdentifier, zoneID: zoneID ?? .default)
-        return CKRecord.Reference(recordID: recordID, action: .deleteSelf)
+        let actions = object.cloudKitReferenceActions()
+        let action = actions[key.stringValue] ?? .deleteSelf
+        return CKRecord.Reference(recordID: recordID, action: action)
     }
 
     func nestedUnkeyedContainer(forKey key: Key) -> UnkeyedEncodingContainer {

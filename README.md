@@ -56,6 +56,12 @@ func ignoredProperties() -> [String]
 ```
 which how its name suggests, let you ignore some properties from being encoded in the resultant `CKRecord`.
 
+You can implement the function
+```swift
+func cloudKitReferenceActions() -> [String: CKRecord.Reference.Action]
+```
+which how its name suggests, let you set `CKRecord.Reference.Action` for any reference property. The default action is `.deleteSelf`.
+
 ### CLLocation
 
 `CLLocation` properties has a special behavior. Since they are primitive types for `CloudKit` but they are not for `Codable` protocol, it was necessary to create a workaround to encode/decode them.

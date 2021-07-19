@@ -9,6 +9,7 @@
 import CoreLocation
 import NestedCloudKitCodable
 import UIKit
+import CloudKit
 
 // swiftlint:disable implicitly_unwrapped_optional
 struct School: CKCodable {
@@ -60,5 +61,13 @@ struct School: CKCodable {
         try container.encode(students, forKey: .students)
         try container.encode(director, forKey: .director)
         try container.encode(books, forKey: .books)
+    }
+    
+    func cloudKitReferenceActions() -> [String : CKRecord.Reference.Action] {
+        return [
+            "students": .deleteSelf,
+            "director": .deleteSelf,
+            "books": .none
+        ]
     }
 }
