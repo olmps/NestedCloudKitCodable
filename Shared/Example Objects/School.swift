@@ -63,7 +63,7 @@ struct School: CKCodable {
         try container.encode(books, forKey: .books)
     }
     
-    func cloudKitReferenceActions() -> [String : CKRecord.ReferenceAction] {
+    func cloudKitReferenceActions() -> [String : CKRecord.Reference.Action] {
         return [
             "students": .deleteSelf,
             "director": .deleteSelf,

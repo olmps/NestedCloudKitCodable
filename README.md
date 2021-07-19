@@ -58,9 +58,9 @@ which how its name suggests, let you ignore some properties from being encoded i
 
 You can implement the function
 ```swift
-func cloudKitReferenceActions() -> [String: CKRecord.ReferenceAction]
+func cloudKitReferenceActions() -> [String: CKRecord.Reference.Action]
 ```
-which how its name suggests, let you set `CKRecord.ReferenceAction` for any reference property. The default action is `.deleteSelf`.
+which how its name suggests, let you set `CKRecord.Reference.Action` for any reference property. The default action is `.deleteSelf`.
 
 ### CLLocation
 
